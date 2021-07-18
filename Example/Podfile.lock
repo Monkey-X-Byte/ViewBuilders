@@ -1,0 +1,16 @@
+PODS:
+  - ViewBuilders (0.0.1)
+
+DEPENDENCIES:
+  - ViewBuilders (from `../`)
+
+EXTERNAL SOURCES:
+  ViewBuilders:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ViewBuilders: 98d7c132d2376e71195fa31e2ca33cf6dfa1ca55
+
+PODFILE CHECKSUM: 98cca40392bfb089224aa90f711415ce6f691b67
+
+COCOAPODS: 1.10.1

@@ -1,0 +1,14 @@
+install! 'cocoapods', :warn_for_unused_master_specs_repo => false
+platform :ios, '15.0'
+use_frameworks!
+inhibit_all_warnings!
+
+target 'ViewBuilders_Example' do
+  pod 'ViewBuilders', :path => '../'
+
+  target 'ViewBuilders_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

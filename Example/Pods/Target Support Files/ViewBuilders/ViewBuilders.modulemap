@@ -1,0 +1,6 @@
+framework module ViewBuilders {
+  umbrella header "ViewBuilders-umbrella.h"
+
+  export *
+  module * { export * }
+}
