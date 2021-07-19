@@ -1,6 +1,6 @@
 # ViewBuilders
 
-[![CI Status](https://img.shields.io/travis/Lucas Abijmil/ViewBuilders.svg?style=flat)](https://travis-ci.org/Lucas Abijmil/ViewBuilders)
+[![CI Status](https://img.shields.io/travis/LucasAbijmil/ViewBuilders.svg?style=flat)](https://travis-ci.org/LucasAbijmil/ViewBuilders)
 [![Version](https://img.shields.io/cocoapods/v/ViewBuilders.svg?style=flat)](https://cocoapods.org/pods/ViewBuilders)
 [![License](https://img.shields.io/cocoapods/l/ViewBuilders.svg?style=flat)](https://cocoapods.org/pods/ViewBuilders)
 [![Platform](https://img.shields.io/cocoapods/p/ViewBuilders.svg?style=flat)](https://cocoapods.org/pods/ViewBuilders)
