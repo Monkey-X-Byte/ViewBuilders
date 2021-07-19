@@ -8,7 +8,9 @@ Pod::Spec.new do |s|
   s.summary          = 'A short description of ViewBuilders.'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  ViewBuilders is a powerful library for use with SwiftUI. It allows you to benefit from many modifiers displaying components missing natively in SwiftUI or basic features such as displaying a Toaster.
+
+  Behind the scenes, a modifier can be done in two different ways: all in SwiftUI, a UIKit-SwiftUI bridge.
                        DESC
 
   s.homepage         = 'https://github.com/LucasAbijmil/ViewBuilders'
@@ -21,6 +23,6 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '15.0'
   s.swift_version = '5.5'
 
-  s.source_files = 'ViewBuilders/Classes/**/*'
+  s.source_files = 'ViewBuilders/Classes/**/*.{h,m,swift,xcdatamodeld}'
 #   s.frameworks = 'SwiftUI'
 end

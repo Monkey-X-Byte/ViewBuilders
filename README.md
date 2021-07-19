@@ -1,24 +1,37 @@
 # ViewBuilders
 
-[![CI Status](https://img.shields.io/travis/LucasAbijmil/ViewBuilders.svg?style=flat)](https://travis-ci.org/LucasAbijmil/ViewBuilders)
+[![Twitter: @lucas_abijmil](https://img.shields.io/badge/contact-@lucas_abijmil-blue.svg?style=flat)](https://twitter.com/lucas_abijmil)
 [![Version](https://img.shields.io/cocoapods/v/ViewBuilders.svg?style=flat)](https://cocoapods.org/pods/ViewBuilders)
 [![License](https://img.shields.io/cocoapods/l/ViewBuilders.svg?style=flat)](https://cocoapods.org/pods/ViewBuilders)
 [![Platform](https://img.shields.io/cocoapods/p/ViewBuilders.svg?style=flat)](https://cocoapods.org/pods/ViewBuilders)
 
-## Example
+## Overview
+ViewBuilders is a powerful library for use with SwiftUI. It allows you to benefit from many modifiers displaying components missing natively in SwiftUI or basic features such as displaying a Toaster.
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+Behind the scenes, a modifier can be done in two different ways: all in SwiftUI or a UIKit-SwiftUI bridge.
 
-## Requirements
+You can explore all the posibilities by running the [Example app](#Example)
+
+## Features
+- `halfSheet` 
+- `interactiveSheet` 
+- `hud` 
 
 ## Installation
+Viewbuilders is available from iOS 15.0.
 
-ViewBuilders is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+### Swift Package Manager
+Work in progress.
 
+### CocoaPods
+Add the following line to your Podfile:
 ```ruby
 pod 'ViewBuilders'
 ```
+
+## Example
+
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Author
 
