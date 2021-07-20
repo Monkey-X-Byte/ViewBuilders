@@ -4,6 +4,18 @@
 
 import SwiftUI
 
+final class HUDItemViewModel: ObservableObject {
+
+  @Published var item: HUDItemSampleCase?
+  @Published var edge: VerticalEdge = .top
+
+  enum HUDItemSampleCase: Identifiable {
+    case label(text: String, symbol: String)
+
+    var id: UUID { UUID() }
+  }
+}
+
 struct HUDItemSample: View {
 
   @StateObject private var viewModel = HUDItemViewModel()
@@ -42,16 +54,4 @@ struct HUDItemSample: View {
     .navigationTitle("HUD Binding<Item?> Sample")
     .navigationBarTitleDisplayMode(.inline)
   }
-}
-
-enum HUDItemSampleCase: Identifiable {
-  case label(text: String, symbol: String)
-
-  var id: UUID { UUID() }
-}
-
-final class HUDItemViewModel: ObservableObject {
-
-  @Published var item: HUDItemSampleCase?
-  @Published var edge: VerticalEdge = .top
 }

@@ -20,6 +20,10 @@ enum Sample: String, Identifiable, CaseIterable {
   case interactiveSheet = "interactive sheet"
   case hudBool = "HUD Binding<Bool>"
   case hudItem = "HUD Binding<Item?>"
+  case toasterBoolViewBuilder = "toaster Binding<Bool> with one @ViewBuilder"
+  case toasterBoolViewBuilders = "toaster Binding<Bool> with two @ViewBuilder"
+  case toasterItemViewBuilder = "toaster Binding<Item?> with one @ViewBuilder"
+  case toasterItemViewBuilders = "toaster Binding<Item?> with two @ViewBuilder"
 
   var id: String { rawValue }
 
@@ -40,6 +44,22 @@ enum Sample: String, Identifiable, CaseIterable {
     case .hudItem:
       NavigationLink(rawValue.firstLetterCapitalized) {
         HUDItemSample()
+      }
+    case .toasterBoolViewBuilder:
+      NavigationLink(rawValue.firstLetterCapitalized) {
+        ToasterBoolViewBuilderSample()
+      }
+    case .toasterBoolViewBuilders:
+      NavigationLink(rawValue.firstLetterCapitalized) {
+        ToasterBoolViewBuildersSample()
+      }
+    case .toasterItemViewBuilder:
+      NavigationLink(rawValue.firstLetterCapitalized) {
+        ToasterItemViewBuilderSample()
+      }
+    case .toasterItemViewBuilders:
+      NavigationLink(rawValue.firstLetterCapitalized) {
+        ToasterItemViewBuildersSample()
       }
     }
   }
