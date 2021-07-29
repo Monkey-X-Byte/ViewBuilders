@@ -6,7 +6,7 @@ import SwiftUI
 
 public extension View {
 
-  func toaster<Content: View>(isPresented: Binding<Bool>, edge: VerticalEdge = .top, backgroundColor: Color, onDismiss: (() -> Void)? = nil, @ViewBuilder content: @escaping () -> Content) -> some View {
+  func toaster<Content: View>(isPresented: Binding<Bool>, backgroundColor: Color, edge: VerticalEdge = .top, onDismiss: (() -> Void)? = nil, @ViewBuilder content: @escaping () -> Content) -> some View {
     ZStack {
       self
 
@@ -23,7 +23,7 @@ public extension View {
     }
   }
 
-  func toaster<Title: View, Icon: View>(isPresented: Binding<Bool>, edge: VerticalEdge = .top, backgroundColor: Color, onDismiss: (() -> Void)? = nil, @ViewBuilder title: @escaping () -> Title, @ViewBuilder icon: @escaping () -> Icon) -> some View {
+  func toaster<Title: View, Icon: View>(isPresented: Binding<Bool>, backgroundColor: Color, edge: VerticalEdge = .top, onDismiss: (() -> Void)? = nil, @ViewBuilder title: @escaping () -> Title, @ViewBuilder icon: @escaping () -> Icon) -> some View {
     ZStack {
       self
 
@@ -40,7 +40,7 @@ public extension View {
     }
   }
 
-  func toaster<Item: Identifiable, Content: View>(item: Binding<Item?>, edge: VerticalEdge = .top, backgroundColor: Color, onDismiss: (() -> Void)? = nil, @ViewBuilder content: @escaping (Item) -> Content) -> some View {
+  func toaster<Item: Identifiable, Content: View>(item: Binding<Item?>, backgroundColor: Color, edge: VerticalEdge = .top, onDismiss: (() -> Void)? = nil, @ViewBuilder content: @escaping (Item) -> Content) -> some View {
     ZStack {
       self
 
@@ -57,7 +57,7 @@ public extension View {
     }
   }
 
-  func toaster<Item: Identifiable, Title: View, Icon: View>(item: Binding<Item?>, edge: VerticalEdge = .top, backgroundColor: Color, onDismiss: (() -> Void)? = nil, @ViewBuilder title: @escaping (Item) -> Title, @ViewBuilder icon: @escaping (Item) -> Icon) -> some View {
+  func toaster<Item: Identifiable, Title: View, Icon: View>(item: Binding<Item?>, backgroundColor: Color, edge: VerticalEdge = .top, onDismiss: (() -> Void)? = nil, @ViewBuilder title: @escaping (Item) -> Title, @ViewBuilder icon: @escaping (Item) -> Icon) -> some View {
     ZStack {
       self
 
