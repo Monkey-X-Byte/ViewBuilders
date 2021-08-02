@@ -4,12 +4,12 @@
 
 import SwiftUI
 
-struct Toaster<Content: View>: View {
+struct Toaster<Content: View, Background: ShapeStyle>: View {
 
   @Environment(\.currentDevice) var currentDevice
   @ViewBuilder let content: Content
+  let background: Background
   let edge: VerticalEdge
-  let backgroundColor: Color
   let onDismiss: (() -> Void)?
 
   var body: some View {
@@ -19,7 +19,7 @@ struct Toaster<Content: View>: View {
         .padding(.horizontal)
         .padding(.vertical, 20)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .background(backgroundColor)
+        .background(background)
         .cornerRadius(currentDevice.isPad ? 16 : 8)
         .padding(.horizontal)
         .animation(.default.speed(0.5))
@@ -29,13 +29,13 @@ struct Toaster<Content: View>: View {
   }
 }
 
-struct ToasterLabel<Title: View, Icon: View>: View {
+struct ToasterLabel<Title: View, Icon: View, Background: ShapeStyle>: View {
 
   @Environment(\.currentDevice) var currentDevice
   @ViewBuilder let title: Title
   @ViewBuilder let icon: Icon
+  let background: Background
   let edge: VerticalEdge
-  let backgroundColor: Color
   let onDismiss: (() -> Void)?
 
   var body: some View {
@@ -45,7 +45,7 @@ struct ToasterLabel<Title: View, Icon: View>: View {
       .padding(.horizontal)
       .padding(.vertical, 20)
       .frame(maxWidth: .infinity, alignment: .leading)
-      .background(backgroundColor)
+      .background(background)
       .cornerRadius(currentDevice.isPad ? 16 : 8)
       .padding(.horizontal)
       .animation(.default.speed(0.5))
@@ -55,18 +55,18 @@ struct ToasterLabel<Title: View, Icon: View>: View {
   }
 }
 
-struct ToasterItem<Item: Identifiable, Content: View>: View {
+struct ToasterItem<Item: Identifiable, Content: View, Background: ShapeStyle>: View {
 
   @Environment(\.currentDevice) var currentDevice
   let content: Content
+  let background: Background
   let edge: VerticalEdge
-  let backgroundColor: Color
   let onDismiss: (() -> Void)?
 
-  init(@ViewBuilder content: @escaping (Item) -> Content, item: Item, edge: VerticalEdge, backgroundColor: Color, onDismiss: (() -> Void)?) {
+  init(@ViewBuilder content: @escaping (Item) -> Content, item: Item, background: Background, edge: VerticalEdge, onDismiss: (() -> Void)?) {
     self.content = content(item)
+    self.background = background
     self.edge = edge
-    self.backgroundColor = backgroundColor
     self.onDismiss = onDismiss
   }
 
@@ -77,7 +77,7 @@ struct ToasterItem<Item: Identifiable, Content: View>: View {
         .padding(.horizontal)
         .padding(.vertical, 20)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .background(backgroundColor)
+        .background(background)
         .cornerRadius(currentDevice.isPad ? 16 : 8)
         .padding(.horizontal)
         .animation(.default.speed(0.5))
@@ -87,20 +87,20 @@ struct ToasterItem<Item: Identifiable, Content: View>: View {
   }
 }
 
-struct ToasterLabelItem<Item: Identifiable, Title: View, Icon: View>: View {
+struct ToasterLabelItem<Item: Identifiable, Title: View, Icon: View, Background: ShapeStyle>: View {
 
   @Environment(\.currentDevice) var currentDevice
   let title: Title
   let icon: Icon
+  let background: Background
   let edge: VerticalEdge
-  let backgroundColor: Color
   let onDismiss: (() -> Void)?
 
-  init(@ViewBuilder title: @escaping (Item) -> Title, @ViewBuilder icon: @escaping (Item) -> Icon, item: Item, edge: VerticalEdge, backgroundColor: Color, onDismiss: (() -> Void)?) {
+  init(@ViewBuilder title: @escaping (Item) -> Title, @ViewBuilder icon: @escaping (Item) -> Icon, item: Item, background: Background, edge: VerticalEdge, onDismiss: (() -> Void)?) {
     self.title = title(item)
     self.icon = icon(item)
     self.edge = edge
-    self.backgroundColor = backgroundColor
+    self.background = background
     self.onDismiss = onDismiss
   }
 
@@ -111,7 +111,7 @@ struct ToasterLabelItem<Item: Identifiable, Title: View, Icon: View>: View {
       .padding(.horizontal)
       .padding(.vertical, 20)
       .frame(maxWidth: .infinity, alignment: .leading)
-      .background(backgroundColor)
+      .background(background)
       .cornerRadius(currentDevice.isPad ? 16 : 8)
       .padding(.horizontal)
       .animation(.default.speed(0.5))

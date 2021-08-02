@@ -6,12 +6,12 @@ import SwiftUI
 
 public extension View {
 
-  func toaster<Content: View>(isPresented: Binding<Bool>, backgroundColor: Color, edge: VerticalEdge = .top, onDismiss: (() -> Void)? = nil, @ViewBuilder content: @escaping () -> Content) -> some View {
+  func toaster<Content: View, Background: ShapeStyle>(isPresented: Binding<Bool>, background: Background, edge: VerticalEdge = .top, onDismiss: (() -> Void)? = nil, @ViewBuilder content: @escaping () -> Content) -> some View {
     ZStack {
       self
 
       if isPresented.wrappedValue {
-        Toaster(content: content, edge: edge, backgroundColor: backgroundColor, onDismiss: onDismiss)
+        Toaster(content: content, background: background, edge: edge, onDismiss: onDismiss)
           .transition(.move(edge: edge.convertedToEdge).combined(with: .opacity))
           .zIndex(999)
           .onAppear {
@@ -23,12 +23,12 @@ public extension View {
     }
   }
 
-  func toaster<Title: View, Icon: View>(isPresented: Binding<Bool>, backgroundColor: Color, edge: VerticalEdge = .top, onDismiss: (() -> Void)? = nil, @ViewBuilder title: @escaping () -> Title, @ViewBuilder icon: @escaping () -> Icon) -> some View {
+  func toaster<Title: View, Icon: View, Background: ShapeStyle>(isPresented: Binding<Bool>, background: Background, edge: VerticalEdge = .top, onDismiss: (() -> Void)? = nil, @ViewBuilder title: @escaping () -> Title, @ViewBuilder icon: @escaping () -> Icon) -> some View {
     ZStack {
       self
 
       if isPresented.wrappedValue {
-        ToasterLabel(title: title, icon: icon, edge: edge, backgroundColor: backgroundColor, onDismiss: onDismiss)
+        ToasterLabel(title: title, icon: icon, background: background, edge: edge, onDismiss: onDismiss)
           .transition(.move(edge: edge.convertedToEdge).combined(with: .opacity))
           .zIndex(999)
           .onAppear {
@@ -40,12 +40,12 @@ public extension View {
     }
   }
 
-  func toaster<Item: Identifiable, Content: View>(item: Binding<Item?>, backgroundColor: Color, edge: VerticalEdge = .top, onDismiss: (() -> Void)? = nil, @ViewBuilder content: @escaping (Item) -> Content) -> some View {
+  func toaster<Item: Identifiable, Content: View, Background: ShapeStyle>(item: Binding<Item?>, background: Background, edge: VerticalEdge = .top, onDismiss: (() -> Void)? = nil, @ViewBuilder content: @escaping (Item) -> Content) -> some View {
     ZStack {
       self
 
       if let wrappedValue = item.wrappedValue {
-        ToasterItem(content: content, item: wrappedValue, edge: edge, backgroundColor: backgroundColor, onDismiss: onDismiss)
+        ToasterItem(content: content, item: wrappedValue, background: background, edge: edge, onDismiss: onDismiss)
           .transition(.move(edge: edge.convertedToEdge).combined(with: .opacity))
           .zIndex(999)
           .onAppear {
@@ -57,12 +57,12 @@ public extension View {
     }
   }
 
-  func toaster<Item: Identifiable, Title: View, Icon: View>(item: Binding<Item?>, backgroundColor: Color, edge: VerticalEdge = .top, onDismiss: (() -> Void)? = nil, @ViewBuilder title: @escaping (Item) -> Title, @ViewBuilder icon: @escaping (Item) -> Icon) -> some View {
+  func toaster<Item: Identifiable, Title: View, Icon: View, Background: ShapeStyle>(item: Binding<Item?>, background: Background, edge: VerticalEdge = .top, onDismiss: (() -> Void)? = nil, @ViewBuilder title: @escaping (Item) -> Title, @ViewBuilder icon: @escaping (Item) -> Icon) -> some View {
     ZStack {
       self
 
       if let wrappedValue = item.wrappedValue {
-        ToasterLabelItem(title: title, icon: icon, item: wrappedValue, edge: edge, backgroundColor: backgroundColor, onDismiss: onDismiss)
+        ToasterLabelItem(title: title, icon: icon, item: wrappedValue, background: background, edge: edge, onDismiss: onDismiss)
           .transition(.move(edge: edge.convertedToEdge).combined(with: .opacity))
           .zIndex(999)
           .onAppear {

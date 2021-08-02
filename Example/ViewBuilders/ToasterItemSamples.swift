@@ -44,7 +44,7 @@ struct ToasterItemViewBuilderSample: View {
         .padding(.horizontal)
       }
     }
-    .toaster(item: $viewModel.item, backgroundColor: .orange, edge: viewModel.edge) { item in
+    .toaster(item: $viewModel.item, background: .orange, edge: viewModel.edge) { item in
       if case let .sample(text, symbol) = item {
         Label(text, systemImage: symbol)
       } else {
@@ -84,7 +84,7 @@ struct ToasterItemViewBuildersSample: View {
         .padding(.horizontal)
       }
     }
-    .toaster(item: $viewModel.item, backgroundColor: .orange, edge: viewModel.edge) { item in
+    .toaster(item: $viewModel.item, background: .orange, edge: viewModel.edge) { item in
       if case .sample(let text, _) = item {
         Text(text)
           .fontWeight(.bold)

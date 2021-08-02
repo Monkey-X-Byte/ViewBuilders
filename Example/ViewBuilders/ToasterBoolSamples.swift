@@ -33,7 +33,7 @@ struct ToasterBoolViewBuilderSample: View {
         .padding(.horizontal)
       }
     }
-    .toaster(isPresented: $showToaster, backgroundColor: .red, edge: edge) {
+    .toaster(isPresented: $showToaster, background: .red, edge: edge) {
       Label("Hello World!", systemImage: "airpods")
     }
     .navigationTitle("Toaster Binding<Bool> with one @ViewBuilder Sample")
@@ -70,7 +70,7 @@ struct ToasterBoolViewBuildersSample: View {
         .padding(.horizontal)
       }
     }
-    .toaster(isPresented: $showToaster, backgroundColor: .red, edge: edge) {
+    .toaster(isPresented: $showToaster, background: .red, edge: edge) {
       Text("Hello World!")
         .fontWeight(.bold)
         .foregroundColor(.black)
