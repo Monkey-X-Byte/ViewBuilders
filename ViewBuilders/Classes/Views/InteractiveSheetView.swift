@@ -10,7 +10,7 @@ struct InteractiveSheetView<Content: View>: UIViewControllerRepresentable {
   @Binding var isPresented: Bool
   let content: Content
   let showsIndicator: Bool
-  let backgroundColor: Color
+  let background: Color
   let onDismiss: (() -> Void)?
   let mode: Mode
 
@@ -32,7 +32,7 @@ struct InteractiveSheetView<Content: View>: UIViewControllerRepresentable {
 
   func updateUIViewController(_ uiViewController: UIViewController, context: Context) {
     if isPresented {
-      let sheetController = InteractiveSheetViewController(rootView: content, showIndicator: showsIndicator, backgroundColor: backgroundColor, mode: mode)
+      let sheetController = InteractiveSheetViewController(rootView: content, showIndicator: showsIndicator, background: background, mode: mode)
       sheetController.presentationController?.delegate = context.coordinator
       DispatchQueue.main.async {
         uiViewController.present(sheetController, animated: true)
@@ -59,12 +59,12 @@ struct InteractiveSheetView<Content: View>: UIViewControllerRepresentable {
 final class InteractiveSheetViewController<Content: View>: UIHostingController<Content> {
 
   private let showsIndicator: Bool
-  private let backgroundColor: Color
+  private let background: Color
   private let mode: InteractiveSheetView<Content>.Mode
 
-  init(rootView: Content, showIndicator: Bool, backgroundColor: Color, mode: InteractiveSheetView<Content>.Mode) {
+  init(rootView: Content, showIndicator: Bool, background: Color, mode: InteractiveSheetView<Content>.Mode) {
     self.showsIndicator = showIndicator
-    self.backgroundColor = backgroundColor
+    self.background = background
     self.mode = mode
     super.init(rootView: rootView)
   }
@@ -75,7 +75,7 @@ final class InteractiveSheetViewController<Content: View>: UIHostingController<C
 
   override func viewDidLoad() {
     if let presentationController = presentationController as? UISheetPresentationController {
-      view.backgroundColor = UIColor(backgroundColor)
+      view.backgroundColor = UIColor(background)
       presentationController.detents = mode == .interactive ? [.medium(), .large()] : [.medium()]
       presentationController.prefersGrabberVisible = showsIndicator
     }

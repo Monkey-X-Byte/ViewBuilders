@@ -8,7 +8,7 @@ struct InteractiveSheetSample: View {
 
   @State private var isShowingInteractiveSheet = false
   @State private var isShowingIndicator = false
-  @State private var backgroundColor: Color = .pink
+  @State private var background: Color = .pink
 
   var body: some View {
     ZStack {
@@ -22,12 +22,12 @@ struct InteractiveSheetSample: View {
         .background(.white, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
         Toggle("Show indicators : \(isShowingIndicator.description)", isOn: $isShowingIndicator)
           .toggleStyle(SwitchToggleStyle(tint: .yellow))
-        ColorPicker("Background Color", selection: $backgroundColor)
+        ColorPicker("Background Color", selection: $background)
       }
       .foregroundColor(.white)
       .padding(.horizontal)
     }
-    .interactiveSheet(isPresented: $isShowingInteractiveSheet, showsIndicator: isShowingIndicator, backgroundColor: backgroundColor) {
+    .interactiveSheet(isPresented: $isShowingInteractiveSheet, showsIndicator: isShowingIndicator, background: background) {
       Text("Hello World!")
     }
     .navigationTitle("Interactive Sheet Sample")

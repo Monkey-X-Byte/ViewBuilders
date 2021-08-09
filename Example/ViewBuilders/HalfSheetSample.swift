@@ -8,7 +8,7 @@ struct HalfSheetSample: View {
 
   @State private var isShowingHalfSheet = false
   @State private var isShowingIndicator = false
-  @State private var backgroundColor: Color = .pink
+  @State private var background: Color = .pink
 
   var body: some View {
     ZStack {
@@ -22,12 +22,12 @@ struct HalfSheetSample: View {
         .background(.white, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
         Toggle("Show indicators : \(isShowingIndicator.description)", isOn: $isShowingIndicator)
           .toggleStyle(SwitchToggleStyle(tint: .yellow))
-        ColorPicker("Background Color", selection: $backgroundColor)
+        ColorPicker("Background Color", selection: $background)
       }
       .foregroundColor(.white)
       .padding(.horizontal)
     }
-    .halfSheet(isPresented: $isShowingHalfSheet, showsIndicator: isShowingIndicator, backgroundColor: backgroundColor) {
+    .halfSheet(isPresented: $isShowingHalfSheet, showsIndicator: isShowingIndicator, background: background) {
       Text("Hello World!")
     }
     .navigationTitle("Half Sheet Sample")

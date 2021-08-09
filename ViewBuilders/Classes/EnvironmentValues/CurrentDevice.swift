@@ -5,23 +5,23 @@
 import SwiftUI
 
 @available(iOS 15.0, *)
-public struct CurrentDevice {
+struct CurrentDevice {
 
   /// A property that indicates if the current iOS device is an iPhone.
-  public var isPhone: Bool { type == .iPhone }
+  public var isPhone: Bool { type == .phone }
 
   /// A property that indicates if the current iOS device is an iPad.
-  public var isPad: Bool { type == .iPad }
+  public var isPad: Bool { type == .pad }
 
   /// Types of iOS devices in Apple's ecosystem.
   private enum DeviceType {
-    case iPhone
-    case iPad
+    case phone
+    case pad
   }
 
   /// A property that detects the current iOS device.
   private var type: DeviceType {
-    return UIDevice.current.userInterfaceIdiom == .pad ? .iPad : .iPhone
+    return UIDevice.current.userInterfaceIdiom == .pad ? .pad : .phone
   }
 
   fileprivate enum EnvironmentKey: SwiftUI.EnvironmentKey {
@@ -32,7 +32,7 @@ public struct CurrentDevice {
 }
 
 @available(iOS 15, *)
-public extension EnvironmentValues {
+extension EnvironmentValues {
 
   /// An `EnvironmentValue` that returns the current iOS device.
   ///

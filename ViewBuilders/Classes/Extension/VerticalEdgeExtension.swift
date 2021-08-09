@@ -4,7 +4,7 @@
 
 import SwiftUI
 
-public extension VerticalEdge {
+extension VerticalEdge {
 
   var convertedToEdge: Edge {
     switch self {
