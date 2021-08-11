@@ -4,6 +4,7 @@
 
 import SwiftUI
 
+/// A `View` that's display a toaster.
 struct Toaster<Content: View, Background: ShapeStyle>: View {
 
   @Environment(\.currentDevice) var currentDevice
@@ -29,6 +30,7 @@ struct Toaster<Content: View, Background: ShapeStyle>: View {
   }
 }
 
+/// A `View` that's display a toaster.
 struct ToasterLabel<Title: View, Icon: View, Background: ShapeStyle>: View {
 
   @Environment(\.currentDevice) var currentDevice
@@ -55,6 +57,7 @@ struct ToasterLabel<Title: View, Icon: View, Background: ShapeStyle>: View {
   }
 }
 
+/// A `View` that's display a toaster.
 struct ToasterItem<Item: Identifiable, Content: View, Background: ShapeStyle>: View {
 
   @Environment(\.currentDevice) var currentDevice
@@ -87,6 +90,7 @@ struct ToasterItem<Item: Identifiable, Content: View, Background: ShapeStyle>: V
   }
 }
 
+/// A `View` that's display a toaster.
 struct ToasterLabelItem<Item: Identifiable, Title: View, Icon: View, Background: ShapeStyle>: View {
 
   @Environment(\.currentDevice) var currentDevice

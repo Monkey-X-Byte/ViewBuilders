@@ -4,6 +4,7 @@
 
 import SwiftUI
 
+/// A `View` that's display a HUD (heads-up display).
 struct HUD<Content: View, Background: ShapeStyle>: View {
 
   @ViewBuilder let content: Content
@@ -27,6 +28,7 @@ struct HUD<Content: View, Background: ShapeStyle>: View {
   }
 }
 
+/// A `View` that's display a (heads-up display).
 struct HUDItem<Item: Identifiable, Content: View, Background: ShapeStyle>: View {
 
   let content: Content

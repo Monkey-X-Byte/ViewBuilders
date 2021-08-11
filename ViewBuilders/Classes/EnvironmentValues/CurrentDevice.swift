@@ -4,7 +4,6 @@
 
 import SwiftUI
 
-@available(iOS 15.0, *)
 struct CurrentDevice {
 
   /// A property that indicates if the current iOS device is an iPhone.

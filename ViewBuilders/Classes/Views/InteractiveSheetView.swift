@@ -4,11 +4,11 @@
 
 import SwiftUI
 
-@available(iOS 15.0, *)
+/// A `UIViewControllerRepresentable` that's display a `UIViewController` bridged.
 struct InteractiveSheetView<Content: View>: UIViewControllerRepresentable {
 
   @Binding var isPresented: Bool
-  let content: Content
+  @ViewBuilder let content: Content
   let showsIndicator: Bool
   let background: Color
   let onDismiss: (() -> Void)?
@@ -55,7 +55,7 @@ struct InteractiveSheetView<Content: View>: UIViewControllerRepresentable {
   }
 }
 
-@available(iOS 15.0, *)
+/// A `UIHostingController` that's display a `UIViewController`.
 final class InteractiveSheetViewController<Content: View>: UIHostingController<Content> {
 
   private let showsIndicator: Bool
