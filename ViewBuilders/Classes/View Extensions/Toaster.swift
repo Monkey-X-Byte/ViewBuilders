@@ -10,7 +10,7 @@ public extension View {
   ///
   /// - Parameters:
   ///   - isPresented: A binding to a Boolean value that determines whether to present the toaster that you create in the modifier's `content` closure.
-  ///   - background: A `ShapeStyle` that will fill the background of the toaster.
+  ///   - background: A ShapeStyle that will fill the background of the toaster.
   ///   - edge: The vertical edge where the toaster will be displayed.
   ///   - onDismiss: The closure to execute when dismissing the toaster.
   ///   - content: A closure returning the content of the toaster.
@@ -35,7 +35,7 @@ public extension View {
   ///
   /// - Parameters:
   ///   - isPresented: A binding to a Boolean value that determines whether to present the toaster that you create in the modifier's `content` closure.
-  ///   - background: A `ShapeStyle` that will fill the background of the toaster.
+  ///   - background: A ShapeStyle that will fill the background of the toaster.
   ///   - edge: The vertical edge where the toaster will be displayed.
   ///   - onDismiss: The closure to execute when dismissing the toaster.
   ///   - title: A closure returning the title of the toaster.
@@ -61,8 +61,9 @@ public extension View {
   ///
   /// - Parameters:
   ///   - item: A binding to an optional source of truth for the toaster. When `item` is non-`nil`, the system passes the item's content to the modifier's closure.
-  ///     You display this content in a toaster that you create that the system displays to the user. If `item` changes, the system dismisses the toaster and replaces it with a new one
-  ///   - background: A `ShapeStyle` that will fill the background of the toaster.
+  ///     You display this content in a toaster that you create that the system displays to the user. If `item` changes, the system dismisses the toaster and replaces it with a new
+  ///     using the same process.
+  ///   - background: A ShapeStyle that will fill the background of the toaster.
   ///   - edge: The vertical edge where the toaster will be displayed.
   ///   - onDismiss: The closure to execute when dismissing the toaster.
   ///   - content: A closure returning the content of the toaster.
@@ -88,7 +89,8 @@ public extension View {
   /// - Parameters:
   ///   - item: A binding to an optional source of truth for the toaster. When `item` is non-`nil`, the system passes the item's content to the modifier's closure.
   ///     You display this content in a toaster that you create that the system displays to the user. If `item` changes, the system dismisses the toaster and replaces it with a new one
-  ///   - background: A `ShapeStyle` that will fill the background of the toaster.
+  ///     using the same process.
+  ///   - background: A ShapeStyle that will fill the background of the toaster.
   ///   - edge: The vertical edge where the toaster will be displayed.
   ///   - onDismiss: The closure to execute when dismissing the toaster.
   ///   - title: A closure returning the title of the toaster.

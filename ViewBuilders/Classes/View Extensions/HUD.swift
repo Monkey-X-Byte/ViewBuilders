@@ -10,7 +10,7 @@ public extension View {
   ///
   /// - Parameters:
   ///   - isPresented: A binding to a Boolean value that determines whether to present the HUD that you create in the modifier's `content` closure.
-  ///   - background: A `ShapeStyle` that will fill the background of the HUD.
+  ///   - background: A ShapeStyle that will fill the background of the HUD.
   ///   - edge: The vertical edge where the HUD will be displayed.
   ///   - onDismiss: The closure to execute when dismissing the HUD.
   ///   - content: A closure returning the content of the HUD.
@@ -37,7 +37,7 @@ public extension View {
   ///   - item: A binding to an optional source of truth for the HUD. When `item` is non-`nil`, the system passes the item's content to the modifier's closure.
   ///     You display this content in a HUD that you create that the system displays to the user. If `item` changes, the system dismisses the HUD and replaces it with a new one
   ///     using the same process.
-  ///   - background: A `ShapeStyle` that will fill the background of the HUD.
+  ///   - background: A ShapeStyle that will fill the background of the HUD.
   ///   - edge: The vertical edge where the HUD will be displayed.
   ///   - onDismiss: The closure to execute when dismissing the HUD.
   ///   - content: A closure returning the content of the HUD.
