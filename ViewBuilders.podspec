@@ -4,7 +4,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ViewBuilders'
-  s.version          = '0.0.1'
+  s.version          = '0.0.9'
   s.summary          = 'A short description of ViewBuilders.'
 
   s.description      = <<-DESC
