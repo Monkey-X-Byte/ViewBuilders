@@ -24,21 +24,17 @@ struct CurrentDevice {
   }
 
   fileprivate enum EnvironmentKey: SwiftUI.EnvironmentKey {
-
     /// The default value for this `EnvironmentValue`.
     static let defaultValue = CurrentDevice()
   }
 }
 
-@available(iOS 15, *)
 extension EnvironmentValues {
 
   /// An `EnvironmentValue` that returns the current iOS device.
   ///
   /// The currentDevice returned can be either iPhone or iPad.
   var currentDevice: CurrentDevice {
-    get {
-      self[CurrentDevice.EnvironmentKey.self]
-    }
+    self[CurrentDevice.EnvironmentKey.self]
   }
 }
