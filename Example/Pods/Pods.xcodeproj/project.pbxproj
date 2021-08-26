@@ -23,6 +23,7 @@
 		9C8C0D86694335124C943B2F6624AF52 /* ToasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B148EE41A86E54492B7438135F76FC80 /* ToasterView.swift */; };
 		ADCFE56FA2C1C628E1153AE2477ADFDF /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19655FD4F7B646A1A2E3E6BF521FBDFD /* HUD.swift */; };
 		D98C4040DD7BA1E760623568ABC29924 /* InteractiveSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31AEDCE9460BCEFFF5267CCA95C5C9 /* InteractiveSheetView.swift */; };
+		D9C0CA4326D7DFF4009EE58C /* HapticFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C0CA4226D7DFF4009EE58C /* HapticFeedback.swift */; };
 		F737355B125703C368C84EFBF6675BAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		FA2509DB12E1A0B5D798925B49656C19 /* HUDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1CE96B1438C42F17F0AC28920A2746 /* HUDView.swift */; };
 /* End PBXBuildFile section */
@@ -46,7 +47,7 @@
 
 /* Begin PBXFileReference section */
 		042CB7897DA7FEBD0E30F9AC8B79CC1E /* Pods-ViewBuilders_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ViewBuilders_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		0D311CE4962240C1B84C3DDA169D33D1 /* Pods_ViewBuilders_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ViewBuilders_Tests.framework; path = "Pods-ViewBuilders_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D311CE4962240C1B84C3DDA169D33D1 /* Pods_ViewBuilders_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViewBuilders_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		11FFF75F20B8A4CF4B59D58E6E00B70B /* ViewBuilders-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ViewBuilders-dummy.m"; sourceTree = "<group>"; };
 		19655FD4F7B646A1A2E3E6BF521FBDFD /* HUD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
 		1BCC2A92ABC9DE0017688B24DFB48CB1 /* Pods-ViewBuilders_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ViewBuilders_Tests.modulemap"; sourceTree = "<group>"; };
@@ -64,26 +65,27 @@
 		4E65146508746F562ABD48E7C69DEACA /* Pods-ViewBuilders_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ViewBuilders_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		503E72179C9B047BA42ABAD3D560904A /* Pods-ViewBuilders_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ViewBuilders_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		51D8CCD2806D69FCA5FA33CB6CAC1987 /* ViewBuilders.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ViewBuilders.modulemap; sourceTree = "<group>"; };
-		5223713978BB37E7BC10EFF6CA9EDCDC /* ViewBuilders.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ViewBuilders.framework; path = ViewBuilders.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5223713978BB37E7BC10EFF6CA9EDCDC /* ViewBuilders.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ViewBuilders.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7E1ADACF334F1CC33F9A41CE7B2727C6 /* ViewBuilders.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ViewBuilders.debug.xcconfig; sourceTree = "<group>"; };
 		80259704793846694AFD322CBDA25748 /* CurrentDevice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CurrentDevice.swift; sourceTree = "<group>"; };
 		8B182E2044BA4D8BE2286103CB2FC20F /* ViewBuilders-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ViewBuilders-umbrella.h"; sourceTree = "<group>"; };
 		95EFC6A4D92D4C456E5E01BB330F7A31 /* Pods-ViewBuilders_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ViewBuilders_Example-frameworks.sh"; sourceTree = "<group>"; };
-		99B89AE6E2600223423C3C63FAC49BE7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		9C8A4A7475DE05D1719A1CBAB076795A /* Pods_ViewBuilders_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ViewBuilders_Example.framework; path = "Pods-ViewBuilders_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		99B89AE6E2600223423C3C63FAC49BE7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		9C8A4A7475DE05D1719A1CBAB076795A /* Pods_ViewBuilders_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViewBuilders_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DB5D16CC710F03FA5386CD8B02D2A7B /* HalfSheet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HalfSheet.swift; sourceTree = "<group>"; };
-		AB115495511A18525A485B8FB94C1130 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		AB115495511A18525A485B8FB94C1130 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AD93606785572D97D6AF2BEDC39B74CA /* ViewBuilders.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ViewBuilders.release.xcconfig; sourceTree = "<group>"; };
 		AEAF978D149023E8933889BD6369600F /* Pods-ViewBuilders_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ViewBuilders_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B00DB7B7B171C30C78FC4F21CFC1A49E /* Pods-ViewBuilders_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ViewBuilders_Example-dummy.m"; sourceTree = "<group>"; };
 		B148EE41A86E54492B7438135F76FC80 /* ToasterView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ToasterView.swift; sourceTree = "<group>"; };
 		B3004C515CDAE9B6BBA1165D4B500D18 /* Pods-ViewBuilders_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ViewBuilders_Tests-dummy.m"; sourceTree = "<group>"; };
 		B52E41A5135F7DBECC25F0F781A7ED23 /* ViewBuilders-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ViewBuilders-Info.plist"; sourceTree = "<group>"; };
-		B91AA3D70E647976722F1954B568B35D /* ViewBuilders.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ViewBuilders.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B91AA3D70E647976722F1954B568B35D /* ViewBuilders.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ViewBuilders.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C25C1B0467EBA290C955FF9420FD497B /* Pods-ViewBuilders_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ViewBuilders_Tests-Info.plist"; sourceTree = "<group>"; };
 		CCC3CCABA31ECF0A33058495A0D3E1C1 /* Pods-ViewBuilders_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ViewBuilders_Example-umbrella.h"; sourceTree = "<group>"; };
+		D9C0CA4226D7DFF4009EE58C /* HapticFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedback.swift; sourceTree = "<group>"; };
 		DB31490B54DCEB414B1C2B5FE209ABB0 /* Pods-ViewBuilders_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ViewBuilders_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		FA6C97DE1B530C02EAEE5E0FC23DF57B /* InteractiveSheet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InteractiveSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -245,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				80259704793846694AFD322CBDA25748 /* CurrentDevice.swift */,
+				D9C0CA4226D7DFF4009EE58C /* HapticFeedback.swift */,
 			);
 			name = EnvironmentValues;
 			path = ViewBuilders/Classes/EnvironmentValues;
@@ -437,6 +440,7 @@
 			files = (
 				782F25746F6DE571CB125AFF55F82BCA /* CurrentDevice.swift in Sources */,
 				0EB7CE28C39629EB53810BE58D5CEE97 /* HalfSheet.swift in Sources */,
+				D9C0CA4326D7DFF4009EE58C /* HapticFeedback.swift in Sources */,
 				ADCFE56FA2C1C628E1153AE2477ADFDF /* HUD.swift in Sources */,
 				FA2509DB12E1A0B5D798925B49656C19 /* HUDView.swift in Sources */,
 				021B19E77FF8CBA50FA1607626AE254A /* InteractiveSheet.swift in Sources */,
@@ -764,8 +768,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
