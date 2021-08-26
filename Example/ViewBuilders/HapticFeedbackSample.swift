@@ -15,6 +15,9 @@ struct HapticFeedbackSample: View {
       List(HapticFeedback.FeedbackType.allCases, id: \.self) { feedbackType in
         Button(feedbackType.description) { hapticFeedback(feedbackType) }
       }
+      .onAppear {
+        hapticFeedback(.notification(type: .error))
+      }
     }
   }
 }

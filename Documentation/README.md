@@ -5,6 +5,9 @@ ViewBuilders is a powerful library for the essential things that are missing in 
 
 ## Table of Contents
 
+### EnvironmentValues
+- [HapticFeedback](HapticFeedback.md)
+
 ### View Modifiers
 - [InteractiveSheet](InteractiveSheet.md)
 - [HalfSheet](HalfSheet.md)

@@ -22,6 +22,7 @@ You can explore all the posibilities by running the [Example app](#Example).
 </p>
 
 ## Features
+- [x] [HapticFeedback](Documentation/HapticFeedback.md)
 - [x] [InteractiveSheet](Documentation/InteractiveSheet.md)
 - [x] [HalfSheet](Documentation/HalfSheet.md)
 - [x] [HUD](Documentation/HUD/README.md)
