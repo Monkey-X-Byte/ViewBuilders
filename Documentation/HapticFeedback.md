@@ -44,11 +44,11 @@ public struct HapticFeedback {
 
 ## Summary
 - First, we have to create an instance of `HapticFeeback` as an [`EnvironmentValue`](https://developer.apple.com/documentation/swiftui/environmentvalues). We can do so like this : 
-``` swiftUI
+``` swift
 @Environment(\.hapticFeedback) var hapticFeedback
 ```
 - Then, thanks to the power of [ `callAsFunction`](https://www.donnywals.com/how-and-when-to-use-callasfunction-in-swift-5-2/) we can create and trigger an haptic feedback like this : 
-``` swiftUI
+``` swift
 hapticFeedback(.impact(style: .heavy))
 hapticFeedback(.selection)
 hapticFeedback(.notification(type: .error))

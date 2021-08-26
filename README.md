@@ -38,7 +38,7 @@ You can explore all the posibilities by running the [Example app](#Example).
 ### Swift Package Manager
 - File > Swift Packages > Add Package Dependency
 - Add `https://github.com/LucasAbijmil/ViewBuilders.git`
-- Select **Up to Next Major Version** with **0.0.1**
+- Select **Up to Next Major Version** with **0.0.9**
 
 ### CocoaPods
 Add the following line to your Podfile:
