@@ -13,3 +13,4 @@ ViewBuilders is a powerful library for the essential things that are missing in 
 - [HalfSheet](HalfSheet.md)
 - [HUD](./HUD/README.md)
 - [Toaster](./Toaster/README.md)
+- [NavigationAppearance](NavigationAppearance.md)

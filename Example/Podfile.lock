@@ -1,5 +1,5 @@
 PODS:
-  - ViewBuilders (0.0.1)
+  - ViewBuilders (0.0.9)
 
 DEPENDENCIES:
   - ViewBuilders (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ViewBuilders: 56183d488f6f60365265389d7b1bd6e50df71ab9
+  ViewBuilders: 9db9ab2e403cf5359f11b5fb1f9cf9a9508016c3
 
-PODFILE CHECKSUM: 98cca40392bfb089224aa90f711415ce6f691b67
+PODFILE CHECKSUM: af3314b669209d1e361e21ae3532c57e45403020
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.2

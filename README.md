@@ -19,6 +19,8 @@ You can explore all the posibilities by running the [Example app](#Example).
   <img src="/Documentation/Assets/HUDTop.gif" width="200">
   <img src="/Documentation/Assets/ToasterBottom.gif" width="200">
   <img src="/Documentation/Assets/ToasterTop.gif" width="200">
+  <img src="/Documentation/Assets/NavigationAppearanceLarge.png" width="200">
+  <img src="/Documentation/Assets/NavigationAppearanceInline.png" width="200">
 </p>
 
 ## Features
@@ -27,6 +29,7 @@ You can explore all the posibilities by running the [Example app](#Example).
 - [x] [HalfSheet](Documentation/HalfSheet.md)
 - [x] [HUD](Documentation/HUD/README.md)
 - [x] [Toaster](Documentation/Toaster/README.md)
+- [x] [NavigationAppearance](Documentation/NavigationAppearance.md)
 
 
 ## Requirements
@@ -47,7 +50,13 @@ pod 'ViewBuilders'
 ```
 
 ## Example
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+To build the example project, please follow these steps:
+```sh
+$ git clone https://github.com/LucasAbijmil/ViewBuilders.git
+$ cd ViewBuilders
+$ cd Example
+$ pod install
+```
 
 ## Author
 Lucas Abijmil, lucas.abijmil@gmail.com. 

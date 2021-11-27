@@ -3,7 +3,6 @@
 //
 
 import SwiftUI
-import ViewBuilders
 
 struct ExampleView: View {
 
@@ -25,6 +24,7 @@ enum Sample: String, Identifiable, CaseIterable {
   case toasterBoolViewBuilders = "toaster Binding<Bool> with two @ViewBuilder"
   case toasterItemViewBuilder = "toaster Binding<Item?> with one @ViewBuilder"
   case toasterItemViewBuilders = "toaster Binding<Item?> with two @ViewBuilder"
+  case navigationAppearance = "navigation bar appearance"
 
   var id: String { rawValue }
 
@@ -66,13 +66,10 @@ enum Sample: String, Identifiable, CaseIterable {
       NavigationLink(rawValue.firstLetterCapitalized) {
         ToasterItemViewBuildersSample()
       }
+    case .navigationAppearance:
+      NavigationLink(rawValue.firstLetterCapitalized) {
+         NavigationAppearanceSample()
+      }
     }
-  }
-}
-
-struct ExampleView_Previews: PreviewProvider {
-
-  static var previews: some View {
-    ExampleView()
   }
 }

@@ -11,6 +11,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		8D6188FC2752442A0055BF9D /* NavigationAppearanceSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6188FB2752442A0055BF9D /* NavigationAppearanceSample.swift */; };
 		B10319A612C46CEE893132E4 /* Pods_ViewBuilders_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17C1F5208169F79083765BA2 /* Pods_ViewBuilders_Example.framework */; };
 		BF56A93F610CED5BCA989050 /* Pods_ViewBuilders_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B25008F9C8205FE2A06025 /* Pods_ViewBuilders_Tests.framework */; };
 		D920ECD726A4E804002D4FE8 /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D920ECD626A4E804002D4FE8 /* ExampleView.swift */; };
@@ -52,6 +53,7 @@
 		63A56CC69F14C63E8A2906E2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		74DC86DDB869CB839B9B3BB4 /* Pods-ViewBuilders_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewBuilders_Example.debug.xcconfig"; path = "Target Support Files/Pods-ViewBuilders_Example/Pods-ViewBuilders_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		864FBB0A3BD9392917B19CE6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		8D6188FB2752442A0055BF9D /* NavigationAppearanceSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationAppearanceSample.swift; sourceTree = "<group>"; };
 		B4DADB6AD72C22120E7AF497 /* ViewBuilders.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ViewBuilders.podspec; path = ../ViewBuilders.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D920ECD626A4E804002D4FE8 /* ExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
 		D983CB5626A6E85A00A4D8B0 /* ToasterBoolSamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToasterBoolSamples.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				D9D7405326A60A3F004B8A3C /* InteractiveSheetSample.swift */,
 				D983CB5626A6E85A00A4D8B0 /* ToasterBoolSamples.swift */,
 				D983CB5826A6ED9600A4D8B0 /* ToasterItemSamples.swift */,
+				8D6188FB2752442A0055BF9D /* NavigationAppearanceSample.swift */,
 			);
 			name = Samples;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD61AFB9204008FA782 /* ViewBuilderExampleApp.swift in Sources */,
+				8D6188FC2752442A0055BF9D /* NavigationAppearanceSample.swift in Sources */,
 				D920ECD726A4E804002D4FE8 /* ExampleView.swift in Sources */,
 				D9D7405826A60A73004B8A3C /* HUDItemSample.swift in Sources */,
 				D9D7405B26A60A97004B8A3C /* VerticalEdgeExtension.swift in Sources */,
