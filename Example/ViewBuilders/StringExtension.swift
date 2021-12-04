@@ -6,11 +6,9 @@ import Foundation
 
 extension String {
 
-  var firstLetterCapitalized: String {
-    return self.capitalizingFirstLetter()
-  }
-
   static let empty = ""
+
+  var firstLetterCapitalized: String { capitalizingFirstLetter() }
 
   func capitalizingFirstLetter() -> String {
     return prefix(1).capitalized + dropFirst()

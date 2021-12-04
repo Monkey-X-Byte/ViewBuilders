@@ -3,6 +3,7 @@
 //
 
 import SwiftUI
+import ViewBuilders
 
 struct HUDBoolSample: View {
 
@@ -15,7 +16,9 @@ struct HUDBoolSample: View {
         .opacity(0.33)
         .ignoresSafeArea()
       VStack(spacing: 15) {
-        Button("Show HUD") { showHUD.toggle() }
+        Button("Show HUD") {
+          showHUD.toggle()
+        }
         .foregroundColor(.black)
         .padding()
         .background(.white, in: RoundedRectangle(cornerRadius: 16, style: .continuous))

@@ -5,7 +5,7 @@
 import SwiftUI
 
 public extension View {
-  
+
   /// Customizes the style of the navigation bars.
   ///
   /// This modifier must be applied to the root of the NavigationView.

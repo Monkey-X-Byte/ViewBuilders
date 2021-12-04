@@ -13,16 +13,6 @@ public struct HapticFeedback {
     case notification(type: UINotificationFeedbackGenerator.FeedbackType)
   }
 
-  fileprivate enum EnvironmentKey: SwiftUI.EnvironmentKey {
-    /// The default value for this `EnvironmentValue`.
-    static let defaultValue = HapticFeedback()
-  }
-
-
-  /// A function that creates and triggers an haptic feedback.
-  ///
-  /// - Parameters:
-  ///   - feedback: The type of feedback that you want to trigger.
   public func callAsFunction(_ feedback: FeedbackType) {
     switch feedback {
     case .impact(let style):
@@ -39,17 +29,16 @@ public struct HapticFeedback {
       feedback.notificationOccurred(type)
     }
   }
-}
-```
 
-## Summary
-- First, we have to create an instance of `HapticFeeback` as an [`EnvironmentValue`](https://developer.apple.com/documentation/swiftui/environmentvalues). We can do so like this : 
-``` swift
-@Environment(\.hapticFeedback) var hapticFeedback
-```
-- Then, thanks to the power of [ `callAsFunction`](https://www.donnywals.com/how-and-when-to-use-callasfunction-in-swift-5-2/) we can create and trigger an haptic feedback like this : 
-``` swift
-hapticFeedback(.impact(style: .heavy))
-hapticFeedback(.selection)
-hapticFeedback(.notification(type: .error))
+  fileprivate enum EnvironmentKey: SwiftUI.EnvironmentKey {
+    static let defaultValue = HapticFeedback()
+  }
+}
+
+public extension EnvironmentValues {
+
+  var hapticFeedback: HapticFeedback {
+    self[HapticFeedback.EnvironmentKey.self]
+  }
+}
 ```

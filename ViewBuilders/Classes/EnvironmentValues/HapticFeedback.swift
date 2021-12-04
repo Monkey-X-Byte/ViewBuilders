@@ -12,13 +12,7 @@ public struct HapticFeedback {
     case notification(type: UINotificationFeedbackGenerator.FeedbackType)
   }
 
-  fileprivate enum EnvironmentKey: SwiftUI.EnvironmentKey {
-    /// The default value for this `EnvironmentValue`.
-    static let defaultValue = HapticFeedback()
-  }
-
-
-  /// A function that creates and triggers an haptic feedback.
+  /// Creates and triggers an haptic feedback.
   ///
   /// - Parameters:
   ///   - feedback: The type of feedback that you want to trigger.
@@ -37,6 +31,11 @@ public struct HapticFeedback {
       feedback.prepare()
       feedback.notificationOccurred(type)
     }
+  }
+
+  fileprivate enum EnvironmentKey: SwiftUI.EnvironmentKey {
+    /// The default value for this `EnvironmentValue`.
+    static let defaultValue = HapticFeedback()
   }
 }
 

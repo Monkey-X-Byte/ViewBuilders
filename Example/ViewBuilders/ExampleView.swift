@@ -15,8 +15,8 @@ struct ExampleView: View {
 }
 
 enum Sample: String, Identifiable, CaseIterable {
-  case halfSheet = "half sheet"
   case hapticFeedback = "haptic feedback"
+  case halfSheet = "half sheet"
   case interactiveSheet = "interactive sheet"
   case hudBool = "HUD Binding<Bool>"
   case hudItem = "HUD Binding<Item?>"
@@ -25,18 +25,19 @@ enum Sample: String, Identifiable, CaseIterable {
   case toasterItemViewBuilder = "toaster Binding<Item?> with one @ViewBuilder"
   case toasterItemViewBuilders = "toaster Binding<Item?> with two @ViewBuilder"
   case navigationAppearance = "navigation bar appearance"
+  case navigationAction = "navigation action"
 
   var id: String { rawValue }
 
   @ViewBuilder var content: some View {
     switch self {
-    case .halfSheet:
-      NavigationLink(rawValue.firstLetterCapitalized) {
-        HalfSheetSample()
-      }
     case .hapticFeedback:
       NavigationLink(rawValue.firstLetterCapitalized) {
         HapticFeedbackSample()
+      }
+    case .halfSheet:
+      NavigationLink(rawValue.firstLetterCapitalized) {
+        HalfSheetSample()
       }
     case .interactiveSheet:
       NavigationLink(rawValue.firstLetterCapitalized) {
@@ -68,7 +69,11 @@ enum Sample: String, Identifiable, CaseIterable {
       }
     case .navigationAppearance:
       NavigationLink(rawValue.firstLetterCapitalized) {
-         NavigationAppearanceSample()
+        NavigationAppearanceSample()
+      }
+    case .navigationAction:
+      NavigationLink(rawValue.firstLetterCapitalized) {
+        NavigationActionSample()
       }
     }
   }

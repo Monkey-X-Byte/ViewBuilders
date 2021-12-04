@@ -20,7 +20,7 @@ struct CurrentDevice {
 
   /// A property that detects the current iOS device.
   private var type: DeviceType {
-    return UIDevice.current.userInterfaceIdiom == .pad ? .pad : .phone
+    UIDevice.current.userInterfaceIdiom == .pad ? .pad : .phone
   }
 
   fileprivate enum EnvironmentKey: SwiftUI.EnvironmentKey {

@@ -7,6 +7,7 @@ ViewBuilders is a powerful library for the essential things that are missing in 
 
 ### EnvironmentValues
 - [HapticFeedback](HapticFeedback.md)
+- [NavigationAction](NavigationAction.md)
 
 ### View Modifiers
 - [InteractiveSheet](InteractiveSheet.md)

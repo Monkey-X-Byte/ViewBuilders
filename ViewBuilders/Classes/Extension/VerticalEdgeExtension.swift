@@ -5,7 +5,7 @@
 import SwiftUI
 
 extension VerticalEdge {
-  
+
   /// A computed property that returns the corresponding `Edge`.
   var convertedToEdge: Edge {
     switch self {

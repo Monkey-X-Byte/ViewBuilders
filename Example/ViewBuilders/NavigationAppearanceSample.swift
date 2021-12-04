@@ -6,18 +6,20 @@ import SwiftUI
 import ViewBuilders
 
 struct NavigationAppearanceSample: View {
-  
+
   @State private var showSample = false
   @State private var titleColor: Color = .red
   @State private var backgroundColor: Color = .brown
   @State private var hideSeparator = false
-  
+
   var body: some View {
     VStack {
       Toggle("Hide Separator", isOn: $hideSeparator)
       ColorPicker("Title color", selection: $titleColor)
       ColorPicker("Background color", selection: $backgroundColor)
-      Button { showSample.toggle() } label: { Text("Show Navigation appearance sample") }
+      Button("Show Navigation appearance sample") {
+        showSample.toggle()
+      }
     }
     .padding(.horizontal)
     .sheet(isPresented: $showSample) {
@@ -27,16 +29,16 @@ struct NavigationAppearanceSample: View {
 }
 
 fileprivate struct NavigationAppearanceView: View {
-  
+
   var titleColor: Color
   var backgroundColor: Color
   var hideSeparator: Bool
-  
+
   var body: some View {
     NavigationView {
       ZStack {
         Color.orange.ignoresSafeArea()
-        NavigationLink(destination: NavigationAppearanceViewPushed()) {
+        NavigationLink(destination: NavigationAppearancePushedView()) {
           Text("Push a view")
         }
       }
@@ -51,12 +53,12 @@ fileprivate struct NavigationAppearanceView: View {
   }
 }
 
-fileprivate struct NavigationAppearanceViewPushed: View {
-  
+fileprivate struct NavigationAppearancePushedView: View {
+
   var body: some View {
     ZStack {
       Color.orange.ignoresSafeArea()
-      NavigationLink(destination: NavigationAppearanceViewPushed()) {
+      NavigationLink(destination: NavigationAppearancePushedView()) {
         Text("Push another view")
       }
     }

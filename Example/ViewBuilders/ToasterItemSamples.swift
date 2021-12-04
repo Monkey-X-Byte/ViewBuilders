@@ -3,18 +3,7 @@
 //
 
 import SwiftUI
-
-final class ToasterItemViewModel: ObservableObject {
-
-  @Published var item: ToasterSampleCase?
-  @Published var edge: VerticalEdge = .top
-
-  enum ToasterSampleCase: Identifiable {
-    case sample(text: String, symbol: String)
-
-    var id: UUID { UUID() }
-  }
-}
+import ViewBuilders
 
 struct ToasterItemViewBuilderSample: View {
 
@@ -26,7 +15,9 @@ struct ToasterItemViewBuilderSample: View {
         .opacity(0.33)
         .ignoresSafeArea()
       VStack(spacing: 15) {
-        Button("Show Toaster") { viewModel.item = .sample(text: "Hello World!", symbol: "airpods") }
+        Button("Show Toaster") {
+          viewModel.item = .sample(text: "Hello World!", symbol: "airpods")
+        }
         .foregroundColor(.black)
         .padding()
         .background(.white, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
@@ -66,7 +57,9 @@ struct ToasterItemViewBuildersSample: View {
         .opacity(0.33)
         .ignoresSafeArea()
       VStack(spacing: 15) {
-        Button("Show Toaster") { viewModel.item = .sample(text: "Hello World!", symbol: "mic") }
+        Button("Show Toaster") {
+          viewModel.item = .sample(text: "Hello World!", symbol: "mic")
+        }
         .foregroundColor(.black)
         .padding()
         .background(.white, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
@@ -112,5 +105,22 @@ struct ToasterItemViewBuildersSample: View {
     }
     .navigationTitle("Toaster Binding<Item?> with two @ViewBuilder Sample")
     .navigationBarTitleDisplayMode(.inline)
+  }
+}
+
+fileprivate final class ToasterItemViewModel: ObservableObject {
+
+  @Published var item: ToasterSampleCase?
+  @Published var edge: VerticalEdge = .top
+
+  enum ToasterSampleCase: Identifiable {
+    case sample(text: String, symbol: String)
+
+    var id: String {
+      switch self {
+      case .sample(let text, let symbol):
+        return text + symbol
+      }
+    }
   }
 }

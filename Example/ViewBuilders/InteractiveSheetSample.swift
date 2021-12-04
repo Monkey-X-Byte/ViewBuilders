@@ -3,6 +3,7 @@
 //
 
 import SwiftUI
+import ViewBuilders
 
 struct InteractiveSheetSample: View {
 
@@ -16,11 +17,13 @@ struct InteractiveSheetSample: View {
         .opacity(0.33)
         .ignoresSafeArea()
       VStack(spacing: 15) {
-        Button("Show interactive sheet") { isShowingInteractiveSheet.toggle() }
+        Button("Show interactive sheet") {
+          isShowingInteractiveSheet.toggle()
+        }
         .foregroundColor(.black)
         .padding()
         .background(.white, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
-        Toggle("Show indicators : \(isShowingIndicator.description)", isOn: $isShowingIndicator)
+        Toggle("Show indicators: \(isShowingIndicator.description)", isOn: $isShowingIndicator)
           .toggleStyle(SwitchToggleStyle(tint: .yellow))
         ColorPicker("Background Color", selection: $background)
       }

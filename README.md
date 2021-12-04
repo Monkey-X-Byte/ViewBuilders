@@ -21,6 +21,7 @@ You can explore all the posibilities by running the [Example app](#Example).
   <img src="/Documentation/Assets/ToasterTop.gif" width="200">
   <img src="/Documentation/Assets/NavigationAppearanceLarge.png" width="200">
   <img src="/Documentation/Assets/NavigationAppearanceInline.png" width="200">
+  <img src="/Documentation/Assets/NavigationAction.gif" width="200">
 </p>
 
 ## Features
@@ -30,6 +31,7 @@ You can explore all the posibilities by running the [Example app](#Example).
 - [x] [HUD](Documentation/HUD/README.md)
 - [x] [Toaster](Documentation/Toaster/README.md)
 - [x] [NavigationAppearance](Documentation/NavigationAppearance.md)
+- [x] [NavigationAction](Documentation/NavigationAction.md)
 
 
 ## Requirements

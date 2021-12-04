@@ -3,6 +3,7 @@
 //
 
 import SwiftUI
+import ViewBuilders
 
 struct ToasterBoolViewBuilderSample: View {
 
@@ -15,7 +16,9 @@ struct ToasterBoolViewBuilderSample: View {
         .opacity(0.33)
         .ignoresSafeArea()
       VStack(spacing: 15) {
-        Button("Show Toaster") { showToaster.toggle() }
+        Button("Show Toaster") {
+          showToaster.toggle()
+        }
         .foregroundColor(.black)
         .padding()
         .background(.white, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
@@ -52,7 +55,9 @@ struct ToasterBoolViewBuildersSample: View {
         .opacity(0.33)
         .ignoresSafeArea()
       VStack(spacing: 15) {
-        Button("Show Toaster") { showToaster.toggle() }
+        Button("Show Toaster") {
+          showToaster.toggle()
+        }
         .foregroundColor(.black)
         .padding()
         .background(.white, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
