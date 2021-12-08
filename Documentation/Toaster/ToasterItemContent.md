@@ -15,6 +15,6 @@ Presents a toaster using the given item as a data source for the toaster's conte
 
 ## Demo
 <p align="center">
-<img src="/Documentation/Assets/ToasterTop.gif" width="48%">  
-<img src="/Documentation/Assets/ToasterBottom.gif" width="48%">
+	<img src="/Documentation/Assets/ToasterTop.gif" width="48%">
+	<img src="/Documentation/Assets/ToasterBottom.gif" width="48%">
 </p>

@@ -12,12 +12,12 @@ struct NavigationAppearance: ViewModifier {
     navBarAppearance.titleTextAttributes = [.foregroundColor: UIColor(titleColor)]
     navBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor(titleColor)]
     navBarAppearance.backgroundColor = UIColor(backgroundColor)
-    UINavigationBar.appearance().standardAppearance = navBarAppearance
-    UINavigationBar.appearance().compactAppearance = navBarAppearance
-    UINavigationBar.appearance().scrollEdgeAppearance = navBarAppearance
     if hideSeparator {
       navBarAppearance.shadowColor = .clear
     }
+    UINavigationBar.appearance().standardAppearance = navBarAppearance
+    UINavigationBar.appearance().compactAppearance = navBarAppearance
+    UINavigationBar.appearance().scrollEdgeAppearance = navBarAppearance
   }
 
   func body(content: Content) -> some View {

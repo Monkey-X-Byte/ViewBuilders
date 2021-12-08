@@ -178,11 +178,11 @@
 		D9D7405026A60A0D004B8A3C /* Samples */ = {
 			isa = PBXGroup;
 			children = (
-				D9D7405126A60A2B004B8A3C /* HalfSheetSample.swift */,
 				D9C0CA4426D7E636009EE58C /* HapticFeedbackSample.swift */,
+				D9D7405326A60A3F004B8A3C /* InteractiveSheetSample.swift */,
+				D9D7405126A60A2B004B8A3C /* HalfSheetSample.swift */,
 				D9D7405526A60A52004B8A3C /* HUDBoolSample.swift */,
 				D9D7405726A60A73004B8A3C /* HUDItemSample.swift */,
-				D9D7405326A60A3F004B8A3C /* InteractiveSheetSample.swift */,
 				D983CB5626A6E85A00A4D8B0 /* ToasterBoolSamples.swift */,
 				D983CB5826A6ED9600A4D8B0 /* ToasterItemSamples.swift */,
 				8D6188FB2752442A0055BF9D /* NavigationAppearanceSample.swift */,

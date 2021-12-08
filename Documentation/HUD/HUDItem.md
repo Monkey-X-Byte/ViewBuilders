@@ -11,8 +11,10 @@ Presents a HUD (heads-up display) using the given item as a data source for the 
 - `background`: A ShapeStyle that will fill the background of the HUD.
 - `edge`: The vertical edge where the HUD will be displayed.
 - `onDismiss`: The closure to execute when dismissing the HUD.
-- `content`: A closure returning the content of the HUD.## Demo
+- `content`: A closure returning the content of the HUD.
+
+## Demo
 <p align="center">
-<img src="/Documentation/Assets/HUDTop.gif" width="48%">  
-<img src="/Documentation/Assets/HUDBottom.gif" width="48%">
+	<img src="/Documentation/Assets/HUDTop.gif" width="48%">
+	<img src="/Documentation/Assets/HUDBottom.gif" width="48%">
 </p>

@@ -16,7 +16,6 @@ struct HUD<Content: View, Background: ShapeStyle>: View {
     VStack {
       if edge == .bottom { Spacer() }
       content
-        .padding(.horizontal, 10)
         .padding()
         .background(background)
         .clipShape(Capsule())
@@ -47,7 +46,6 @@ struct HUDItem<Item: Identifiable, Content: View, Background: ShapeStyle>: View 
     VStack {
       if edge == .bottom { Spacer() }
       content
-        .padding(.horizontal, 10)
         .padding()
         .background(background)
         .clipShape(Capsule())

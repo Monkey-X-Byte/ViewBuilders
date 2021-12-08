@@ -14,4 +14,6 @@ Presents a half sheet when a binding to a Boolean value that you provide is true
 - `content`: A closure returning the content of the half sheet.
 
 ## Demo
-![HalfSheet](./Assets/HalfSheet.gif)
+<p align="center">
+	<img src="/Documentation/Assets/HalfSheet.gif">
+</p>

@@ -17,6 +17,8 @@ struct NavigationActionSample: View {
       NavigationActionView()
     }
     .onAppear { showSample.toggle() }
+    .navigationTitle("Navigation Action Sample")
+    .navigationBarTitleDisplayMode(.inline)
   }
 }
 

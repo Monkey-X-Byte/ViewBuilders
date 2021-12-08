@@ -14,4 +14,6 @@ Presents an interactive sheet when a binding to a Boolean value that you provide
 - `content`: A closure returning the content of the interactive sheet.
 
 ## Demo
-![InteractiveSheet](./Assets/InteractiveSheet.gif)
+<p align="center">
+	<img src="/Documentation/Assets/InteractiveSheet.gif">
+</p>

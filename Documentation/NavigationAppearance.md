@@ -17,6 +17,6 @@ In order to keep consistency in the design of your application, this modifier do
 
 ## Demo
 <p align="center">
-<img src="/Documentation/Assets/NavigationAppearanceLarge.png" width="48%">  
-<img src="/Documentation/Assets/NavigationAppearanceInline.png" width="48%">
+	<img src="/Documentation/Assets/NavigationAppearanceLarge.png" width="48%">
+	<img src="/Documentation/Assets/NavigationAppearanceInline.png" width="48%">
 </p>

@@ -15,6 +15,6 @@ Presents a HUD (heads-up display) when a binding to a Boolean value that you pro
 
 ## Demo
 <p align="center">
-<img src="/Documentation/Assets/HUDTop.gif" width="48%">  
-<img src="/Documentation/Assets/HUDBottom.gif" width="48%">
+	<img src="/Documentation/Assets/HUDTop.gif" width="48%">
+	<img src="/Documentation/Assets/HUDBottom.gif" width="48%">
 </p>

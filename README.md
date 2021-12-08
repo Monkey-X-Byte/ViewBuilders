@@ -12,17 +12,6 @@ ViewBuilders is a powerful library for use with SwiftUI. It allows you to benefi
 Behind the scenes, a modifier can be done in two different ways: all in SwiftUI or a UIKit-SwiftUI bridge.
 
 You can explore all the posibilities by running the [Example app](#Example).
-<p>
-  <img src="/Documentation/Assets/InteractiveSheet.gif" width="200">
-  <img src="/Documentation/Assets/HalfSheet.gif" width="200">
-  <img src="/Documentation/Assets/HUDBottom.gif" width="200">
-  <img src="/Documentation/Assets/HUDTop.gif" width="200">
-  <img src="/Documentation/Assets/ToasterBottom.gif" width="200">
-  <img src="/Documentation/Assets/ToasterTop.gif" width="200">
-  <img src="/Documentation/Assets/NavigationAppearanceLarge.png" width="200">
-  <img src="/Documentation/Assets/NavigationAppearanceInline.png" width="200">
-  <img src="/Documentation/Assets/NavigationAction.gif" width="200">
-</p>
 
 ## Features
 - [x] [HapticFeedback](Documentation/HapticFeedback.md)
@@ -33,6 +22,18 @@ You can explore all the posibilities by running the [Example app](#Example).
 - [x] [NavigationAppearance](Documentation/NavigationAppearance.md)
 - [x] [NavigationAction](Documentation/NavigationAction.md)
 
+## Preview
+<p>
+  <a href="https://github.com/LucasAbijmil/ViewBuilders/blob/develop/Documentation/InteractiveSheet.md"><img src="/Documentation/Assets/InteractiveSheet.gif" width="200"></a>
+  <a href="https://github.com/LucasAbijmil/ViewBuilders/blob/develop/Documentation/HalfSheet.md"><img src="/Documentation/Assets/HalfSheet.gif" width="200"></a>
+  <a href="https://github.com/LucasAbijmil/ViewBuilders/blob/develop/Documentation/HUD/README.md"><img src="/Documentation/Assets/HUDBottom.gif" width="200"></a>
+  <a href="https://github.com/LucasAbijmil/ViewBuilders/blob/develop/Documentation/HUD/README.md"><img src="/Documentation/Assets/HUDTop.gif" width="200"></a>
+  <a href="https://github.com/LucasAbijmil/ViewBuilders/blob/develop/Documentation/Toaster/README.md"><img src="/Documentation/Assets/ToasterBottom.gif" width="200"></a>
+  <a href="https://github.com/LucasAbijmil/ViewBuilders/blob/develop/Documentation/Toaster/README.md"><img src="/Documentation/Assets/ToasterTop.gif" width="200"></a>
+  <a href="https://github.com/LucasAbijmil/ViewBuilders/blob/develop/Documentation/NavigationAppearance.md"><img src="/Documentation/Assets/NavigationAppearanceLarge.png" width="200"></a>
+  <a href="https://github.com/LucasAbijmil/ViewBuilders/blob/develop/Documentation/NavigationAppearance.md"><img src="/Documentation/Assets/NavigationAppearanceInline.png" width="200"></a>
+  <a href="https://github.com/LucasAbijmil/ViewBuilders/blob/develop/Documentation/NavigationAction.md"><img src="/Documentation/Assets/NavigationAction.gif" width="200"></a>
+</p>
 
 ## Requirements
 - iOS 15.0+ 

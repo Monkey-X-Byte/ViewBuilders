@@ -25,6 +25,8 @@ struct NavigationAppearanceSample: View {
     .sheet(isPresented: $showSample) {
       NavigationAppearanceView(titleColor: titleColor, backgroundColor: backgroundColor, hideSeparator: hideSeparator)
     }
+    .navigationTitle("Navigation Appearance Sample")
+    .navigationBarTitleDisplayMode(.inline)
   }
 }
 

@@ -17,8 +17,7 @@ struct Toaster<Content: View, Background: ShapeStyle>: View {
     VStack {
       if edge == .bottom { Spacer() }
       content
-        .padding(.horizontal)
-        .padding(.vertical, 20)
+        .padding()
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(background)
         .cornerRadius(currentDevice.isPad ? 16 : 8)
@@ -44,8 +43,7 @@ struct ToasterLabel<Title: View, Icon: View, Background: ShapeStyle>: View {
     VStack {
       if edge == .bottom { Spacer() }
       Label { title } icon: { icon }
-      .padding(.horizontal)
-      .padding(.vertical, 20)
+      .padding()
       .frame(maxWidth: .infinity, alignment: .leading)
       .background(background)
       .cornerRadius(currentDevice.isPad ? 16 : 8)
@@ -77,8 +75,7 @@ struct ToasterItem<Item: Identifiable, Content: View, Background: ShapeStyle>: V
     VStack {
       if edge == .bottom { Spacer() }
       content
-        .padding(.horizontal)
-        .padding(.vertical, 20)
+        .padding()
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(background)
         .cornerRadius(currentDevice.isPad ? 16 : 8)
@@ -112,8 +109,7 @@ struct ToasterLabelItem<Item: Identifiable, Title: View, Icon: View, Background:
     VStack {
       if edge == .bottom { Spacer() }
       Label { title } icon: { icon }
-      .padding(.horizontal)
-      .padding(.vertical, 20)
+      .padding()
       .frame(maxWidth: .infinity, alignment: .leading)
       .background(background)
       .cornerRadius(currentDevice.isPad ? 16 : 8)

@@ -10,13 +10,12 @@ struct HapticFeedbackSample: View {
   @Environment(\.hapticFeedback) private var hapticFeedback
 
   var body: some View {
-    VStack {
-      Text("Tap on a row to trigger the haptic feedback")
-      List(HapticFeedback.FeedbackType.allCases, id: \.self) { feedback in
-        Button(feedback.description) {
-          hapticFeedback(feedback)
-        }
+    List(HapticFeedback.FeedbackType.allCases, id: \.self) { feedback in
+      Button(feedback.description) {
+        hapticFeedback(feedback)
       }
     }
+    .navigationTitle("Haptic Feedback Sample")
+    .navigationBarTitleDisplayMode(.inline)
   }
 }

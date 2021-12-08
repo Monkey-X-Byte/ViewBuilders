@@ -12,24 +12,17 @@ struct InteractiveSheetSample: View {
   @State private var background: Color = .pink
 
   var body: some View {
-    ZStack {
-      LinearGradient(colors: [.blue, .indigo, .purple], startPoint: .leading, endPoint: .trailing)
-        .opacity(0.33)
-        .ignoresSafeArea()
-      VStack(spacing: 15) {
-        Button("Show interactive sheet") {
-          isShowingInteractiveSheet.toggle()
-        }
-        .foregroundColor(.black)
-        .padding()
-        .background(.white, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
-        Toggle("Show indicators: \(isShowingIndicator.description)", isOn: $isShowingIndicator)
-          .toggleStyle(SwitchToggleStyle(tint: .yellow))
-        ColorPicker("Background Color", selection: $background)
+    VStack(spacing: 15) {
+      Button("Show interactive sheet") {
+        isShowingInteractiveSheet.toggle()
       }
-      .foregroundColor(.white)
-      .padding(.horizontal)
+      .padding()
+      .background(.secondary, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+      Toggle("Show indicators: \(isShowingIndicator.description)", isOn: $isShowingIndicator)
+        .toggleStyle(SwitchToggleStyle(tint: .yellow))
+      ColorPicker("Background Color", selection: $background)
     }
+    .padding(.horizontal)
     .interactiveSheet(isPresented: $isShowingInteractiveSheet, showsIndicator: isShowingIndicator, background: background) {
       Text("Hello World!")
     }

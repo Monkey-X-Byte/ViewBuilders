@@ -15,6 +15,6 @@ Presents a toaster when a binding to a Boolean value that you provide is true.
 
 ## Demo
 <p align="center">
-<img src="/Documentation/Assets/ToasterTop.gif" width="48%">  
-<img src="/Documentation/Assets/ToasterBottom.gif" width="48%">
+	<img src="/Documentation/Assets/ToasterTop.gif" width="48%">
+	<img src="/Documentation/Assets/ToasterBottom.gif" width="48%">
 </p>
