@@ -7,11 +7,11 @@ import SwiftUI
 /// A `View` that's display a toaster.
 struct Toaster<Content: View, Background: ShapeStyle>: View {
 
-  @Environment(\.currentDevice) var currentDevice
   @ViewBuilder let content: Content
   let background: Background
   let edge: VerticalEdge
   let onDismiss: (() -> Void)?
+  @Environment(\.currentDevice) private var currentDevice
 
   var body: some View {
     VStack {
@@ -32,12 +32,12 @@ struct Toaster<Content: View, Background: ShapeStyle>: View {
 /// A `View` that's display a toaster.
 struct ToasterLabel<Title: View, Icon: View, Background: ShapeStyle>: View {
 
-  @Environment(\.currentDevice) var currentDevice
   @ViewBuilder let title: Title
   @ViewBuilder let icon: Icon
   let background: Background
   let edge: VerticalEdge
   let onDismiss: (() -> Void)?
+  @Environment(\.currentDevice) private var currentDevice
 
   var body: some View {
     VStack {
@@ -58,11 +58,11 @@ struct ToasterLabel<Title: View, Icon: View, Background: ShapeStyle>: View {
 /// A `View` that's display a toaster.
 struct ToasterItem<Item: Identifiable, Content: View, Background: ShapeStyle>: View {
 
-  @Environment(\.currentDevice) var currentDevice
   let content: Content
   let background: Background
   let edge: VerticalEdge
   let onDismiss: (() -> Void)?
+  @Environment(\.currentDevice) private var currentDevice
 
   init(@ViewBuilder content: @escaping (Item) -> Content, item: Item, background: Background, edge: VerticalEdge, onDismiss: (() -> Void)?) {
     self.content = content(item)
@@ -90,12 +90,12 @@ struct ToasterItem<Item: Identifiable, Content: View, Background: ShapeStyle>: V
 /// A `View` that's display a toaster.
 struct ToasterLabelItem<Item: Identifiable, Title: View, Icon: View, Background: ShapeStyle>: View {
 
-  @Environment(\.currentDevice) var currentDevice
   let title: Title
   let icon: Icon
   let background: Background
   let edge: VerticalEdge
   let onDismiss: (() -> Void)?
+  @Environment(\.currentDevice) private var currentDevice
 
   init(@ViewBuilder title: @escaping (Item) -> Title, @ViewBuilder icon: @escaping (Item) -> Icon, item: Item, background: Background, edge: VerticalEdge, onDismiss: (() -> Void)?) {
     self.title = title(item)

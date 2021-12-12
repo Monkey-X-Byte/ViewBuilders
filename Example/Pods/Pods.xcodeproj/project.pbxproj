@@ -21,6 +21,8 @@
 		897658A2D9F1C8DC5D83DE701F267822 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		8A9862E41551B19B2ABB1E05F2DAA10A /* InteractiveSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9298187D8C9B1DADA31C97C8CFA93C24 /* InteractiveSheetView.swift */; };
 		8D10673D275BA72800F65A4D /* NavigationAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D10673C275BA72800F65A4D /* NavigationAction.swift */; };
+		8D51EF122765E917004BDA29 /* DialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51EF112765E917004BDA29 /* DialogView.swift */; };
+		8D51EF142765EBA7004BDA29 /* Dialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51EF132765EBA7004BDA29 /* Dialog.swift */; };
 		92F277E1FBCE4AF5F8DFAB35D3B67AEE /* ToasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692072A7C587913D12AD676E988AF6E0 /* ToasterView.swift */; };
 		94736AABFD80ED5394CB6A2994943CCE /* NavigationAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208A0D386D6CABC5DE8515AD742F2A10 /* NavigationAppearance.swift */; };
 		9A4C6091E6D834214FBFEE1180732C09 /* Pods-ViewBuilders_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B00DB7B7B171C30C78FC4F21CFC1A49E /* Pods-ViewBuilders_Example-dummy.m */; };
@@ -76,6 +78,8 @@
 		7802E61DDE3C46297E18B033F38E17B0 /* HUDView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HUDView.swift; sourceTree = "<group>"; };
 		8750E0F86405295BB672A3AC6506F5AB /* HUD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
 		8D10673C275BA72800F65A4D /* NavigationAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationAction.swift; sourceTree = "<group>"; };
+		8D51EF112765E917004BDA29 /* DialogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogView.swift; sourceTree = "<group>"; };
+		8D51EF132765EBA7004BDA29 /* Dialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dialog.swift; sourceTree = "<group>"; };
 		8E8EEC36231DE033A75EEE2F9E002B60 /* Toaster.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Toaster.swift; sourceTree = "<group>"; };
 		9298187D8C9B1DADA31C97C8CFA93C24 /* InteractiveSheetView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InteractiveSheetView.swift; sourceTree = "<group>"; };
 		930F8848F08CC27FF5FCB6846DA32591 /* HapticFeedback.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HapticFeedback.swift; sourceTree = "<group>"; };
@@ -168,6 +172,7 @@
 				2F951AB37FC7ACAE7D3B816477E91C6E /* InteractiveSheet.swift */,
 				208A0D386D6CABC5DE8515AD742F2A10 /* NavigationAppearance.swift */,
 				8E8EEC36231DE033A75EEE2F9E002B60 /* Toaster.swift */,
+				8D51EF132765EBA7004BDA29 /* Dialog.swift */,
 			);
 			name = "View Extensions";
 			path = "ViewBuilders/Classes/View Extensions";
@@ -291,6 +296,7 @@
 				7802E61DDE3C46297E18B033F38E17B0 /* HUDView.swift */,
 				9298187D8C9B1DADA31C97C8CFA93C24 /* InteractiveSheetView.swift */,
 				692072A7C587913D12AD676E988AF6E0 /* ToasterView.swift */,
+				8D51EF112765E917004BDA29 /* DialogView.swift */,
 			);
 			name = Views;
 			path = ViewBuilders/Classes/Views;
@@ -462,6 +468,8 @@
 				6CB58CF72CE3D9568DE53AF3FA1DEED3 /* HUD.swift in Sources */,
 				CE11126AEB768200399837F8CE3FC529 /* HUDView.swift in Sources */,
 				8D10673D275BA72800F65A4D /* NavigationAction.swift in Sources */,
+				8D51EF122765E917004BDA29 /* DialogView.swift in Sources */,
+				8D51EF142765EBA7004BDA29 /* Dialog.swift in Sources */,
 				3852C2B4E2DFBAEFC662F78628954B08 /* InteractiveSheet.swift in Sources */,
 				8A9862E41551B19B2ABB1E05F2DAA10A /* InteractiveSheetView.swift in Sources */,
 				94736AABFD80ED5394CB6A2994943CCE /* NavigationAppearance.swift in Sources */,

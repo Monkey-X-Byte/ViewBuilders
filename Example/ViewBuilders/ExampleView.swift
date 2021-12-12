@@ -26,6 +26,8 @@ enum Sample: String, Identifiable, CaseIterable {
   case toasterItemViewBuilders = "toaster Binding<Item?> with two @ViewBuilder"
   case navigationAppearance = "navigation bar appearance"
   case navigationAction = "navigation action"
+  case dialogBool = "dialog Binding<Bool>"
+  case dialogItem = "dialog Binding<Item?>"
 
   var id: String { rawValue }
 
@@ -74,6 +76,14 @@ enum Sample: String, Identifiable, CaseIterable {
     case .navigationAction:
       NavigationLink(rawValue.firstLetterCapitalized) {
         NavigationActionSample()
+      }
+    case .dialogBool:
+      NavigationLink(rawValue.firstLetterCapitalized) {
+        DialogBoolSample()
+      }
+    case .dialogItem:
+      NavigationLink(rawValue.firstLetterCapitalized) {
+        DialogItemSample()
       }
     }
   }

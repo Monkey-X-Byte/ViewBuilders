@@ -21,6 +21,7 @@ You can explore all the posibilities by running the [Example app](#Example).
 - [x] [Toaster](Documentation/Toaster/README.md)
 - [x] [NavigationAppearance](Documentation/NavigationAppearance.md)
 - [x] [NavigationAction](Documentation/NavigationAction.md)
+- [x] [Dialog](Documentation/Dialog/README.md)
 
 ## Preview
 <p>
@@ -33,6 +34,8 @@ You can explore all the posibilities by running the [Example app](#Example).
   <a href="https://github.com/LucasAbijmil/ViewBuilders/blob/develop/Documentation/NavigationAppearance.md"><img src="/Documentation/Assets/NavigationAppearanceLarge.png" width="200"></a>
   <a href="https://github.com/LucasAbijmil/ViewBuilders/blob/develop/Documentation/NavigationAppearance.md"><img src="/Documentation/Assets/NavigationAppearanceInline.png" width="200"></a>
   <a href="https://github.com/LucasAbijmil/ViewBuilders/blob/develop/Documentation/NavigationAction.md"><img src="/Documentation/Assets/NavigationAction.gif" width="200"></a>
+  <a href="https://github.com/LucasAbijmil/ViewBuilders/blob/develop/Documentation/Dialog/README.md"><img src="/Documentation/Assets/DialogBottom.gif" width="200"></a>
+  <a href="https://github.com/LucasAbijmil/ViewBuilders/blob/develop/Documentation/Dialog/README.md"><img src="/Documentation/Assets/DialogTop.gif" width="200"></a>
 </p>
 
 ## Requirements

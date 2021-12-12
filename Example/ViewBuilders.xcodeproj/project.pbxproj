@@ -12,7 +12,10 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		8D10673F275BA84100F65A4D /* NavigationActionSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D10673E275BA84100F65A4D /* NavigationActionSample.swift */; };
+		8D51EF162765ED2F004BDA29 /* DialogBoolSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51EF152765ED2F004BDA29 /* DialogBoolSample.swift */; };
+		8D51EF182765F129004BDA29 /* DialogItemSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51EF172765F129004BDA29 /* DialogItemSample.swift */; };
 		8D6188FC2752442A0055BF9D /* NavigationAppearanceSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6188FB2752442A0055BF9D /* NavigationAppearanceSample.swift */; };
+		8DACAEC4276613BC00B8918D /* DialogInteractionModeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DACAEC3276613BC00B8918D /* DialogInteractionModeExtension.swift */; };
 		8DBFF88E275BB66100B5D6B7 /* HapticFeedbackFeedbackTypeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBFF88D275BB66100B5D6B7 /* HapticFeedbackFeedbackTypeExtension.swift */; };
 		8DBFF890275BB6AC00B5D6B7 /* UIImpactFeedbackGeneratorFeedbackStyleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBFF88F275BB6AC00B5D6B7 /* UIImpactFeedbackGeneratorFeedbackStyleExtension.swift */; };
 		8DBFF892275BB6E700B5D6B7 /* UINotificationFeedbackGeneratorFeedbackTypeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBFF891275BB6E700B5D6B7 /* UINotificationFeedbackGeneratorFeedbackTypeExtension.swift */; };
@@ -58,7 +61,10 @@
 		74DC86DDB869CB839B9B3BB4 /* Pods-ViewBuilders_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewBuilders_Example.debug.xcconfig"; path = "Target Support Files/Pods-ViewBuilders_Example/Pods-ViewBuilders_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		864FBB0A3BD9392917B19CE6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		8D10673E275BA84100F65A4D /* NavigationActionSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationActionSample.swift; sourceTree = "<group>"; };
+		8D51EF152765ED2F004BDA29 /* DialogBoolSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogBoolSample.swift; sourceTree = "<group>"; };
+		8D51EF172765F129004BDA29 /* DialogItemSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogItemSample.swift; sourceTree = "<group>"; };
 		8D6188FB2752442A0055BF9D /* NavigationAppearanceSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationAppearanceSample.swift; sourceTree = "<group>"; };
+		8DACAEC3276613BC00B8918D /* DialogInteractionModeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogInteractionModeExtension.swift; sourceTree = "<group>"; };
 		8DBFF88D275BB66100B5D6B7 /* HapticFeedbackFeedbackTypeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedbackFeedbackTypeExtension.swift; sourceTree = "<group>"; };
 		8DBFF88F275BB6AC00B5D6B7 /* UIImpactFeedbackGeneratorFeedbackStyleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImpactFeedbackGeneratorFeedbackStyleExtension.swift; sourceTree = "<group>"; };
 		8DBFF891275BB6E700B5D6B7 /* UINotificationFeedbackGeneratorFeedbackTypeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINotificationFeedbackGeneratorFeedbackTypeExtension.swift; sourceTree = "<group>"; };
@@ -187,6 +193,8 @@
 				D983CB5826A6ED9600A4D8B0 /* ToasterItemSamples.swift */,
 				8D6188FB2752442A0055BF9D /* NavigationAppearanceSample.swift */,
 				8D10673E275BA84100F65A4D /* NavigationActionSample.swift */,
+				8D51EF152765ED2F004BDA29 /* DialogBoolSample.swift */,
+				8D51EF172765F129004BDA29 /* DialogItemSample.swift */,
 			);
 			name = Samples;
 			sourceTree = "<group>";
@@ -199,6 +207,7 @@
 				8DBFF88D275BB66100B5D6B7 /* HapticFeedbackFeedbackTypeExtension.swift */,
 				8DBFF88F275BB6AC00B5D6B7 /* UIImpactFeedbackGeneratorFeedbackStyleExtension.swift */,
 				8DBFF891275BB6E700B5D6B7 /* UINotificationFeedbackGeneratorFeedbackTypeExtension.swift */,
+				8DACAEC3276613BC00B8918D /* DialogInteractionModeExtension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -388,9 +397,11 @@
 				607FACD61AFB9204008FA782 /* ViewBuilderExampleApp.swift in Sources */,
 				8D6188FC2752442A0055BF9D /* NavigationAppearanceSample.swift in Sources */,
 				D920ECD726A4E804002D4FE8 /* ExampleView.swift in Sources */,
+				8D51EF162765ED2F004BDA29 /* DialogBoolSample.swift in Sources */,
 				D9D7405826A60A73004B8A3C /* HUDItemSample.swift in Sources */,
 				D9D7405B26A60A97004B8A3C /* VerticalEdgeExtension.swift in Sources */,
 				8DBFF890275BB6AC00B5D6B7 /* UIImpactFeedbackGeneratorFeedbackStyleExtension.swift in Sources */,
+				8DACAEC4276613BC00B8918D /* DialogInteractionModeExtension.swift in Sources */,
 				D9D7405D26A60AAF004B8A3C /* StringExtension.swift in Sources */,
 				D983CB5926A6ED9600A4D8B0 /* ToasterItemSamples.swift in Sources */,
 				D983CB5726A6E85A00A4D8B0 /* ToasterBoolSamples.swift in Sources */,
@@ -398,6 +409,7 @@
 				8DBFF892275BB6E700B5D6B7 /* UINotificationFeedbackGeneratorFeedbackTypeExtension.swift in Sources */,
 				D9D7405226A60A2B004B8A3C /* HalfSheetSample.swift in Sources */,
 				8D10673F275BA84100F65A4D /* NavigationActionSample.swift in Sources */,
+				8D51EF182765F129004BDA29 /* DialogItemSample.swift in Sources */,
 				D9C0CA4526D7E636009EE58C /* HapticFeedbackSample.swift in Sources */,
 				8DBFF88E275BB66100B5D6B7 /* HapticFeedbackFeedbackTypeExtension.swift in Sources */,
 				D9D7405626A60A52004B8A3C /* HUDBoolSample.swift in Sources */,

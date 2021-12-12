@@ -10,7 +10,7 @@ struct HapticFeedbackSample: View {
   @Environment(\.hapticFeedback) private var hapticFeedback
 
   var body: some View {
-    List(HapticFeedback.FeedbackType.allCases, id: \.self) { feedback in
+    List(HapticFeedback.FeedbackType.allCases, id: \.description) { feedback in
       Button(feedback.description) {
         hapticFeedback(feedback)
       }
