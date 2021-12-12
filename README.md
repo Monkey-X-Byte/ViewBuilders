@@ -45,9 +45,10 @@ You can explore all the posibilities by running the [Example app](#Example).
 ## Installation
 
 ### Swift Package Manager
-- File > Swift Packages > Add Package Dependency
-- Add `https://github.com/LucasAbijmil/ViewBuilders.git`
-- Select **Up to Next Major Version** with **0.0.9**
+- `File` > `Add Packages...`
+- In the search bar at the top right, paste : `https://github.com/LucasAbijmil/ViewBuilders.git`
+- For `Dependency Rule`, select `Up to Next Major Version` with **0.0.9**
+- Click on `Add Package`
 
 ### CocoaPods
 Add the following line to your Podfile:
