@@ -6,6 +6,7 @@ import SwiftUI
 
 public struct HapticFeedback {
 
+  /// The type of feedback that you can trigger.
   public enum FeedbackType: Hashable {
     case impact(style: UIImpactFeedbackGenerator.FeedbackStyle)
     case selection

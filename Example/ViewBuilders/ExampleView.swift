@@ -28,6 +28,7 @@ enum Sample: String, Identifiable, CaseIterable {
   case navigationAction = "navigation action"
   case dialogBool = "dialog Binding<Bool>"
   case dialogItem = "dialog Binding<Item?>"
+  case currentDevice = "current device"
 
   var id: String { rawValue }
 
@@ -84,6 +85,10 @@ enum Sample: String, Identifiable, CaseIterable {
     case .dialogItem:
       NavigationLink(rawValue.firstLetterCapitalized) {
         DialogItemSample()
+      }
+    case .currentDevice:
+      NavigationLink(rawValue.firstLetterCapitalized) {
+        CurrentDeviceSample()
       }
     }
   }

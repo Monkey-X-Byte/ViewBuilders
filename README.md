@@ -22,6 +22,7 @@ You can explore all the posibilities by running the [Example app](#Example).
 - [x] [NavigationAppearance](Documentation/NavigationAppearance.md)
 - [x] [NavigationAction](Documentation/NavigationAction.md)
 - [x] [Dialog](Documentation/Dialog/README.md)
+- [x] [CurrentDevice](Documentation/CurrentDevice.md)
 
 ## Preview
 <p>

@@ -15,6 +15,7 @@
 		8D51EF162765ED2F004BDA29 /* DialogBoolSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51EF152765ED2F004BDA29 /* DialogBoolSample.swift */; };
 		8D51EF182765F129004BDA29 /* DialogItemSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51EF172765F129004BDA29 /* DialogItemSample.swift */; };
 		8D6188FC2752442A0055BF9D /* NavigationAppearanceSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6188FB2752442A0055BF9D /* NavigationAppearanceSample.swift */; };
+		8DA64F192767E78D006CDA47 /* CurrentDeviceSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA64F182767E78D006CDA47 /* CurrentDeviceSample.swift */; };
 		8DACAEC4276613BC00B8918D /* DialogInteractionModeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DACAEC3276613BC00B8918D /* DialogInteractionModeExtension.swift */; };
 		8DBFF88E275BB66100B5D6B7 /* HapticFeedbackFeedbackTypeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBFF88D275BB66100B5D6B7 /* HapticFeedbackFeedbackTypeExtension.swift */; };
 		8DBFF890275BB6AC00B5D6B7 /* UIImpactFeedbackGeneratorFeedbackStyleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBFF88F275BB6AC00B5D6B7 /* UIImpactFeedbackGeneratorFeedbackStyleExtension.swift */; };
@@ -64,6 +65,7 @@
 		8D51EF152765ED2F004BDA29 /* DialogBoolSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogBoolSample.swift; sourceTree = "<group>"; };
 		8D51EF172765F129004BDA29 /* DialogItemSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogItemSample.swift; sourceTree = "<group>"; };
 		8D6188FB2752442A0055BF9D /* NavigationAppearanceSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationAppearanceSample.swift; sourceTree = "<group>"; };
+		8DA64F182767E78D006CDA47 /* CurrentDeviceSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentDeviceSample.swift; sourceTree = "<group>"; };
 		8DACAEC3276613BC00B8918D /* DialogInteractionModeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogInteractionModeExtension.swift; sourceTree = "<group>"; };
 		8DBFF88D275BB66100B5D6B7 /* HapticFeedbackFeedbackTypeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedbackFeedbackTypeExtension.swift; sourceTree = "<group>"; };
 		8DBFF88F275BB6AC00B5D6B7 /* UIImpactFeedbackGeneratorFeedbackStyleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImpactFeedbackGeneratorFeedbackStyleExtension.swift; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 				8D10673E275BA84100F65A4D /* NavigationActionSample.swift */,
 				8D51EF152765ED2F004BDA29 /* DialogBoolSample.swift */,
 				8D51EF172765F129004BDA29 /* DialogItemSample.swift */,
+				8DA64F182767E78D006CDA47 /* CurrentDeviceSample.swift */,
 			);
 			name = Samples;
 			sourceTree = "<group>";
@@ -399,6 +402,7 @@
 				D920ECD726A4E804002D4FE8 /* ExampleView.swift in Sources */,
 				8D51EF162765ED2F004BDA29 /* DialogBoolSample.swift in Sources */,
 				D9D7405826A60A73004B8A3C /* HUDItemSample.swift in Sources */,
+				8DA64F192767E78D006CDA47 /* CurrentDeviceSample.swift in Sources */,
 				D9D7405B26A60A97004B8A3C /* VerticalEdgeExtension.swift in Sources */,
 				8DBFF890275BB6AC00B5D6B7 /* UIImpactFeedbackGeneratorFeedbackStyleExtension.swift in Sources */,
 				8DACAEC4276613BC00B8918D /* DialogInteractionModeExtension.swift in Sources */,
