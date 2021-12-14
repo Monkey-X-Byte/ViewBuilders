@@ -1,10 +1,12 @@
 # HalfSheet
 
-## Description 
+## Description
 Presents a half sheet when a binding to a Boolean value that you provide is true.
 
-## Signature of the function 
-`func halfSheet<Content: View>(isPresented: Binding<Bool>, showsIndicator: Bool = true, background: Color, onDismiss: (() -> Void)? = nil, @ViewBuilder content: @escaping () -> Content) -> some View`
+## Signature of the function
+```swift
+func halfSheet<Content: View>(isPresented: Binding<Bool>, showsIndicator: Bool = true, background: Color, onDismiss: (() -> Void)? = nil, @ViewBuilder content: @escaping () -> Content) -> some View
+```
 
 ## Parameters of the function
 - `isPresented`: A binding to a Boolean value that determines whether to present the half sheet that you create in the modifier's `content` closure.

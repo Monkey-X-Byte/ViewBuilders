@@ -1,10 +1,12 @@
 # HUD
 
-## Description 
+## Description
 Presents a HUD (heads-up display) when a binding to a Boolean value that you provide is true.
 
-## Signature of the function 
-`func hud<Content: View, Background: ShapeStyle>(isPresented: Binding<Bool>, background: Background, edge: VerticalEdge = .top, onDismiss: (() -> Void)? = nil, @ViewBuilder content: @escaping () -> Content) -> some View`
+## Signature of the function
+```swift
+func hud<Content: View, Background: ShapeStyle>(isPresented: Binding<Bool>, background: Background, edge: VerticalEdge = .top, onDismiss: (() -> Void)? = nil, @ViewBuilder content: @escaping () -> Content) -> some View
+```
 
 ## Parameters of the function
 - `isPresented`: A binding to a Boolean value that determines whether to present the HUD that you create in the modifier's `content` closure.

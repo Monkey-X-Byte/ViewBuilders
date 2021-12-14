@@ -25,6 +25,11 @@ You can explore all the posibilities by running the [Example app](#Example).
   - [x] [Toaster](Documentation/ViewModifiers/Toaster/README.md)
   - [x] [NavigationAppearance](Documentation/ViewModifiers/NavigationAppearance.md)
   - [x] [Dialog](Documentation/ViewModifiers/Dialog/README.md)
+### Preview
+  - [x] [Binding](Documentation/Preview/Binding.md)
+  - [x] [Component](Documentation/Preview/Component/README.md)
+  - [x] [Content](Documentation/Preview/Content/README.md)
+  - [x] [Device](Documentation/Preview/Device/README.md)
 
 ## Preview
 <p>
@@ -42,14 +47,14 @@ You can explore all the posibilities by running the [Example app](#Example).
 </p>
 
 ## Requirements
-- iOS 15.0+ 
-- Swift 5.5+ 
+- iOS 15.0+
+- Swift 5.5+
 
 ## Installation
 
 ### Swift Package Manager
 - `File` > `Add Packages...`
-- In the search bar at the top right, paste : `https://github.com/LucasAbijmil/ViewBuilders.git`
+- In the search bar at the top right, paste: `https://github.com/LucasAbijmil/ViewBuilders.git`
 - For `Dependency Rule`, select `Up to Next Major Version` with **0.0.9**
 - Click on `Add Package`
 
@@ -69,7 +74,7 @@ $ pod install
 ```
 
 ## Author
-Lucas Abijmil, lucas.abijmil@gmail.com. 
+Lucas Abijmil, lucas.abijmil@gmail.com.
 
 You can also reach me on [Twitter](https://twitter.com/lucas_abijmil).
 

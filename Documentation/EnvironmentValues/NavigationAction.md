@@ -1,6 +1,6 @@
 # NavigationAction
 
-## Description 
+## Description
 An `EnvironmentValue` that allows you to `popToRoot` without having to pass a `Binding` to each sub-view.
 
 ## Discussion
@@ -8,7 +8,7 @@ When you create a `NavigationView` and want to be able to pop to root, you must 
 You need to set the environment property `isActive` with this binding as follows: `environment(\.navigation.isActive, $isNavigationActive)`.
 
 ## Declaration
-``` swift
+```swift
 public struct NavigationAction {
 
   public var isActive: Binding<Bool> = .constant(false)
@@ -34,7 +34,7 @@ public extension EnvironmentValues {
 }
 ```
 
-## Demo 
+## Demo
 <p align="center">
 	<img src="/Documentation/Assets/NavigationAction.gif">
 </p>

@@ -1,11 +1,11 @@
 # CurrentDevice
 
-## Description 
+## Description
 An `EnvironmentValue` that returns the current Apple device.
 
 
 ## Declaration
-``` swift
+```swift
 public struct CurrentDevice {
 
   public var isPhone: Bool { type == .phone }
@@ -40,5 +40,4 @@ public extension EnvironmentValues {
     self[CurrentDevice.EnvironmentKey.self]
   }
 }
-
 ```

@@ -1,6 +1,6 @@
 # Toaster
 
-## Several signatures for this function : 
+## Several signatures for this function:
 1. [`func toaster<Content: View, Background: ShapeStyle>(isPresented: Binding<Bool>, background: Background, edge: VerticalEdge = .top, onDismiss: (() -> Void)? = nil, @ViewBuilder content: @escaping () -> Content) -> some View`](ToasterBoolContent.md)
 
 2. [`func toaster<Title: View, Icon: View, Background:" ShapeStyle>(isPresented: Binding<Bool>, background: Background, edge: VerticalEdge = .top, onDismiss: (() -> Void)? = nil, @ViewBuilder title: @escaping () -> Title, @ViewBuilder icon: @escaping () -> Icon) -> some View`](ToasterBoolTitleIcon.md)

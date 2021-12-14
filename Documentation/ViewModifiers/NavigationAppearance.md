@@ -4,7 +4,9 @@
 Customizes the style of the navigation bars.
 
 ## Signature of the function
-`func navigationAppearance(titleColor: Color, backgroundColor: Color, hideSeparator: Bool = false) -> some View`
+```swift
+func navigationAppearance(titleColor: Color, backgroundColor: Color, hideSeparator: Bool = false) -> some View
+```
 
 ## Discussion
 This modifier must be applied to the root of the NavigationView.

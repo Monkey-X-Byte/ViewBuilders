@@ -1,10 +1,12 @@
 # Toaster
 
-## Description 
+## Description
 Presents a toaster when a binding to a Boolean value that you provide is true.
 
-## Signature of the function 
-`func toaster<Title: View, Icon: View, Background: ShapeStyle>(isPresented: Binding<Bool>, background: Background, edge: VerticalEdge = .top, onDismiss: (() -> Void)? = nil, @ViewBuilder title: @escaping () -> Title, @ViewBuilder icon: @escaping () -> Icon) -> some View`
+## Signature of the function
+```swift
+func toaster<Title: View, Icon: View, Background: ShapeStyle>(isPresented: Binding<Bool>, background: Background, edge: VerticalEdge = .top, onDismiss: (() -> Void)? = nil, @ViewBuilder title: @escaping () -> Title, @ViewBuilder icon: @escaping () -> Icon) -> some View
+```
 
 ## Parameters of the function
 - `isPresented`: A binding to a Boolean value that determines whether to present the toaster that you create in the modifier's `content` closure.

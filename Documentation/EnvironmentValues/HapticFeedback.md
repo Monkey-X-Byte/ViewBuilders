@@ -1,10 +1,10 @@
 # HapticFeedback
 
-## Description 
+## Description
 An `EnvironmentValue` that creates and triggers haptic feedbacks.
 
 ## Declaration
-``` swift
+```swift
 public struct HapticFeedback {
 
   public enum FeedbackType: Hashable {
