@@ -183,10 +183,19 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		D9D7405026A60A0D004B8A3C /* Samples */ = {
+		8D9BA4E927693C07004E3B39 /* EnvironmentValues */ = {
 			isa = PBXGroup;
 			children = (
 				D9C0CA4426D7E636009EE58C /* HapticFeedbackSample.swift */,
+				8D10673E275BA84100F65A4D /* NavigationActionSample.swift */,
+				8DA64F182767E78D006CDA47 /* CurrentDeviceSample.swift */,
+			);
+			name = EnvironmentValues;
+			sourceTree = "<group>";
+		};
+		8D9BA4EA27693C0E004E3B39 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
 				D9D7405326A60A3F004B8A3C /* InteractiveSheetSample.swift */,
 				D9D7405126A60A2B004B8A3C /* HalfSheetSample.swift */,
 				D9D7405526A60A52004B8A3C /* HUDBoolSample.swift */,
@@ -194,10 +203,17 @@
 				D983CB5626A6E85A00A4D8B0 /* ToasterBoolSamples.swift */,
 				D983CB5826A6ED9600A4D8B0 /* ToasterItemSamples.swift */,
 				8D6188FB2752442A0055BF9D /* NavigationAppearanceSample.swift */,
-				8D10673E275BA84100F65A4D /* NavigationActionSample.swift */,
 				8D51EF152765ED2F004BDA29 /* DialogBoolSample.swift */,
 				8D51EF172765F129004BDA29 /* DialogItemSample.swift */,
-				8DA64F182767E78D006CDA47 /* CurrentDeviceSample.swift */,
+			);
+			name = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		D9D7405026A60A0D004B8A3C /* Samples */ = {
+			isa = PBXGroup;
+			children = (
+				8D9BA4E927693C07004E3B39 /* EnvironmentValues */,
+				8D9BA4EA27693C0E004E3B39 /* ViewModifiers */,
 			);
 			name = Samples;
 			sourceTree = "<group>";
