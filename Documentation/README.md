@@ -6,14 +6,14 @@ ViewBuilders is a powerful library for the essential things that are missing in 
 ## Table of Contents
 
 ### EnvironmentValues
-- [HapticFeedback](HapticFeedback.md)
-- [NavigationAction](NavigationAction.md)
-- [CurrentDevice](CurrentDevice.md)
+- [HapticFeedback](./EnvironmentValues/HapticFeedback.md)
+- [NavigationAction](./EnvironmentValues/NavigationAction.md)
+- [CurrentDevice](./EnvironmentValues/CurrentDevice.md)
 
 ### View Modifiers
-- [InteractiveSheet](InteractiveSheet.md)
-- [HalfSheet](HalfSheet.md)
-- [HUD](./HUD/README.md)
-- [Toaster](./Toaster/README.md)
-- [NavigationAppearance](NavigationAppearance.md)
-- [Dialog](./Dialog/README.md)
+- [InteractiveSheet](./ViewModifiers/InteractiveSheet.md)
+- [HalfSheet](./ViewModifiers/HalfSheet.md)
+- [HUD](./ViewModifiers/HUD/README.md)
+- [Toaster](./ViewModifiers/Toaster/README.md)
+- [NavigationAppearance](./ViewModifiers/NavigationAppearance.md)
+- [Dialog](./ViewModifiers/Dialog/README.md)

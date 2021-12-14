@@ -14,29 +14,31 @@ Behind the scenes, a modifier can be done in two different ways: all in SwiftUI 
 You can explore all the posibilities by running the [Example app](#Example).
 
 ## Features
-- [x] [HapticFeedback](Documentation/HapticFeedback.md)
-- [x] [InteractiveSheet](Documentation/InteractiveSheet.md)
-- [x] [HalfSheet](Documentation/HalfSheet.md)
-- [x] [HUD](Documentation/HUD/README.md)
-- [x] [Toaster](Documentation/Toaster/README.md)
-- [x] [NavigationAppearance](Documentation/NavigationAppearance.md)
-- [x] [NavigationAction](Documentation/NavigationAction.md)
-- [x] [Dialog](Documentation/Dialog/README.md)
-- [x] [CurrentDevice](Documentation/CurrentDevice.md)
+### EnvironmentValues
+  - [x] [HapticFeedback](Documentation/EnvironmentValues/HapticFeedback.md)
+  - [x] [NavigationAction](Documentation/EnvironmentValues/NavigationAction.md)
+  - [x] [CurrentDevice](Documentation/EnvironmentValues/CurrentDevice.md)
+### View Modifiers
+  - [x] [InteractiveSheet](Documentation/ViewModifiers/InteractiveSheet.md)
+  - [x] [HalfSheet](Documentation/ViewModifiers/HalfSheet.md)
+  - [x] [HUD](Documentation/ViewModifiers/HUD/README.md)
+  - [x] [Toaster](Documentation/ViewModifiers/Toaster/README.md)
+  - [x] [NavigationAppearance](Documentation/ViewModifiers/NavigationAppearance.md)
+  - [x] [Dialog](Documentation/ViewModifiers/Dialog/README.md)
 
 ## Preview
 <p>
-  <a href="https://github.com/LucasAbijmil/ViewBuilders/blob/develop/Documentation/InteractiveSheet.md"><img src="/Documentation/Assets/InteractiveSheet.gif" width="200"></a>
-  <a href="https://github.com/LucasAbijmil/ViewBuilders/blob/develop/Documentation/HalfSheet.md"><img src="/Documentation/Assets/HalfSheet.gif" width="200"></a>
-  <a href="https://github.com/LucasAbijmil/ViewBuilders/blob/develop/Documentation/HUD/README.md"><img src="/Documentation/Assets/HUDBottom.gif" width="200"></a>
-  <a href="https://github.com/LucasAbijmil/ViewBuilders/blob/develop/Documentation/HUD/README.md"><img src="/Documentation/Assets/HUDTop.gif" width="200"></a>
-  <a href="https://github.com/LucasAbijmil/ViewBuilders/blob/develop/Documentation/Toaster/README.md"><img src="/Documentation/Assets/ToasterBottom.gif" width="200"></a>
-  <a href="https://github.com/LucasAbijmil/ViewBuilders/blob/develop/Documentation/Toaster/README.md"><img src="/Documentation/Assets/ToasterTop.gif" width="200"></a>
-  <a href="https://github.com/LucasAbijmil/ViewBuilders/blob/develop/Documentation/NavigationAppearance.md"><img src="/Documentation/Assets/NavigationAppearanceLarge.png" width="200"></a>
-  <a href="https://github.com/LucasAbijmil/ViewBuilders/blob/develop/Documentation/NavigationAppearance.md"><img src="/Documentation/Assets/NavigationAppearanceInline.png" width="200"></a>
-  <a href="https://github.com/LucasAbijmil/ViewBuilders/blob/develop/Documentation/NavigationAction.md"><img src="/Documentation/Assets/NavigationAction.gif" width="200"></a>
-  <a href="https://github.com/LucasAbijmil/ViewBuilders/blob/develop/Documentation/Dialog/README.md"><img src="/Documentation/Assets/DialogBottom.gif" width="200"></a>
-  <a href="https://github.com/LucasAbijmil/ViewBuilders/blob/develop/Documentation/Dialog/README.md"><img src="/Documentation/Assets/DialogTop.gif" width="200"></a>
+  <a href="https://github.com/LucasAbijmil/ViewBuilders/blob/develop/Documentation/ViewModifiers/InteractiveSheet.md"><img src="/Documentation/Assets/InteractiveSheet.gif" width="200"></a>
+  <a href="https://github.com/LucasAbijmil/ViewBuilders/blob/develop/Documentation/ViewModifiers/HalfSheet.md"><img src="/Documentation/Assets/HalfSheet.gif" width="200"></a>
+  <a href="https://github.com/LucasAbijmil/ViewBuilders/blob/develop/Documentation/ViewModifiers/HUD/README.md"><img src="/Documentation/Assets/HUDBottom.gif" width="200"></a>
+  <a href="https://github.com/LucasAbijmil/ViewBuilders/blob/develop/Documentation/ViewModifiers/HUD/README.md"><img src="/Documentation/Assets/HUDTop.gif" width="200"></a>
+  <a href="https://github.com/LucasAbijmil/ViewBuilders/blob/develop/Documentation/ViewModifiers/Toaster/README.md"><img src="/Documentation/Assets/ToasterBottom.gif" width="200"></a>
+  <a href="https://github.com/LucasAbijmil/ViewBuilders/blob/develop/Documentation/ViewModifiers/Toaster/README.md"><img src="/Documentation/Assets/ToasterTop.gif" width="200"></a>
+  <a href="https://github.com/LucasAbijmil/ViewBuilders/blob/develop/Documentation/ViewModifiers/NavigationAppearance.md"><img src="/Documentation/Assets/NavigationAppearanceLarge.png" width="200"></a>
+  <a href="https://github.com/LucasAbijmil/ViewBuilders/blob/develop/Documentation/ViewModifiers/NavigationAppearance.md"><img src="/Documentation/Assets/NavigationAppearanceInline.png" width="200"></a>
+  <a href="https://github.com/LucasAbijmil/ViewBuilders/blob/develop/Documentation/EnvironmentValues/NavigationAction.md"><img src="/Documentation/Assets/NavigationAction.gif" width="200"></a>
+  <a href="https://github.com/LucasAbijmil/ViewBuilders/blob/develop/Documentation/ViewModifiers/Dialog/README.md"><img src="/Documentation/Assets/DialogBottom.gif" width="200"></a>
+  <a href="https://github.com/LucasAbijmil/ViewBuilders/blob/develop/Documentation/ViewModifiers/Dialog/README.md"><img src="/Documentation/Assets/DialogTop.gif" width="200"></a>
 </p>
 
 ## Requirements
