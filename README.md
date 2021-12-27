@@ -7,9 +7,11 @@
 [![Platform](https://img.shields.io/cocoapods/p/ViewBuilders.svg?style=flat)](https://cocoapods.org/pods/ViewBuilders)
 
 ## Overview
-ViewBuilders is a powerful library for use with SwiftUI. It allows you to benefit from many modifiers displaying components missing natively in SwiftUI or basic features such as displaying a toaster.
+ViewBuilders is a powerful library for SwiftUI. It allows you to use *View Modifiers* to display components such as *toaster*, *HUD*, *custom dialog* and more.
 
 Behind the scenes, a modifier can be done in two different ways: all in SwiftUI or a UIKit-SwiftUI bridge.
+
+In addition to these *View Modifiers*, ViewBuilders provides custom *EnvironmentValues* and modifiers to take full advantage of the preview in Xcode.
 
 You can explore all the posibilities by running the [Example app](#Example).
 
