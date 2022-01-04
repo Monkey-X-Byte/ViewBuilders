@@ -4,8 +4,8 @@
 
 import SwiftUI
 
-/// A `View` that's display a toaster.
-struct Toaster<Content: View, Background: ShapeStyle>: View {
+/// A `View` that's display a toast.
+struct Toast<Content: View, Background: ShapeStyle>: View {
 
   @ViewBuilder let content: Content
   let background: Background
@@ -29,8 +29,8 @@ struct Toaster<Content: View, Background: ShapeStyle>: View {
   }
 }
 
-/// A `View` that's display a toaster.
-struct ToasterLabel<Title: View, Icon: View, Background: ShapeStyle>: View {
+/// A `View` that's display a toast.
+struct ToastLabel<Title: View, Icon: View, Background: ShapeStyle>: View {
 
   @ViewBuilder let title: Title
   @ViewBuilder let icon: Icon
@@ -55,8 +55,8 @@ struct ToasterLabel<Title: View, Icon: View, Background: ShapeStyle>: View {
   }
 }
 
-/// A `View` that's display a toaster.
-struct ToasterItem<Item: Identifiable, Content: View, Background: ShapeStyle>: View {
+/// A `View` that's display a toast.
+struct ToastItem<Item: Identifiable, Content: View, Background: ShapeStyle>: View {
 
   let content: Content
   let background: Background
@@ -87,8 +87,8 @@ struct ToasterItem<Item: Identifiable, Content: View, Background: ShapeStyle>: V
   }
 }
 
-/// A `View` that's display a toaster.
-struct ToasterLabelItem<Item: Identifiable, Title: View, Icon: View, Background: ShapeStyle>: View {
+/// A `View` that's display a toast.
+struct ToastLabelItem<Item: Identifiable, Title: View, Icon: View, Background: ShapeStyle>: View {
 
   let title: Title
   let icon: Icon

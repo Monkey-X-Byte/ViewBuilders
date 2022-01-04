@@ -23,8 +23,8 @@
 		B10319A612C46CEE893132E4 /* Pods_ViewBuilders_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17C1F5208169F79083765BA2 /* Pods_ViewBuilders_Example.framework */; };
 		BF56A93F610CED5BCA989050 /* Pods_ViewBuilders_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B25008F9C8205FE2A06025 /* Pods_ViewBuilders_Tests.framework */; };
 		D920ECD726A4E804002D4FE8 /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D920ECD626A4E804002D4FE8 /* ExampleView.swift */; };
-		D983CB5726A6E85A00A4D8B0 /* ToasterBoolSamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = D983CB5626A6E85A00A4D8B0 /* ToasterBoolSamples.swift */; };
-		D983CB5926A6ED9600A4D8B0 /* ToasterItemSamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = D983CB5826A6ED9600A4D8B0 /* ToasterItemSamples.swift */; };
+		D983CB5726A6E85A00A4D8B0 /* ToastBoolSamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = D983CB5626A6E85A00A4D8B0 /* ToastBoolSamples.swift */; };
+		D983CB5926A6ED9600A4D8B0 /* ToastItemSamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = D983CB5826A6ED9600A4D8B0 /* ToastItemSamples.swift */; };
 		D9C0CA4526D7E636009EE58C /* HapticFeedbackSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C0CA4426D7E636009EE58C /* HapticFeedbackSample.swift */; };
 		D9D7405226A60A2B004B8A3C /* HalfSheetSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D7405126A60A2B004B8A3C /* HalfSheetSample.swift */; };
 		D9D7405426A60A3F004B8A3C /* InteractiveSheetSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D7405326A60A3F004B8A3C /* InteractiveSheetSample.swift */; };
@@ -72,8 +72,8 @@
 		8DBFF891275BB6E700B5D6B7 /* UINotificationFeedbackGeneratorFeedbackTypeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINotificationFeedbackGeneratorFeedbackTypeExtension.swift; sourceTree = "<group>"; };
 		B4DADB6AD72C22120E7AF497 /* ViewBuilders.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ViewBuilders.podspec; path = ../ViewBuilders.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D920ECD626A4E804002D4FE8 /* ExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
-		D983CB5626A6E85A00A4D8B0 /* ToasterBoolSamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToasterBoolSamples.swift; sourceTree = "<group>"; };
-		D983CB5826A6ED9600A4D8B0 /* ToasterItemSamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToasterItemSamples.swift; sourceTree = "<group>"; };
+		D983CB5626A6E85A00A4D8B0 /* ToastBoolSamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastBoolSamples.swift; sourceTree = "<group>"; };
+		D983CB5826A6ED9600A4D8B0 /* ToastItemSamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastItemSamples.swift; sourceTree = "<group>"; };
 		D9C0CA4426D7E636009EE58C /* HapticFeedbackSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedbackSample.swift; sourceTree = "<group>"; };
 		D9D7405126A60A2B004B8A3C /* HalfSheetSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfSheetSample.swift; sourceTree = "<group>"; };
 		D9D7405326A60A3F004B8A3C /* InteractiveSheetSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveSheetSample.swift; sourceTree = "<group>"; };
@@ -200,8 +200,8 @@
 				D9D7405126A60A2B004B8A3C /* HalfSheetSample.swift */,
 				D9D7405526A60A52004B8A3C /* HUDBoolSample.swift */,
 				D9D7405726A60A73004B8A3C /* HUDItemSample.swift */,
-				D983CB5626A6E85A00A4D8B0 /* ToasterBoolSamples.swift */,
-				D983CB5826A6ED9600A4D8B0 /* ToasterItemSamples.swift */,
+				D983CB5626A6E85A00A4D8B0 /* ToastBoolSamples.swift */,
+				D983CB5826A6ED9600A4D8B0 /* ToastItemSamples.swift */,
 				8D6188FB2752442A0055BF9D /* NavigationAppearanceSample.swift */,
 				8D51EF152765ED2F004BDA29 /* DialogBoolSample.swift */,
 				8D51EF172765F129004BDA29 /* DialogItemSample.swift */,
@@ -423,8 +423,8 @@
 				8DBFF890275BB6AC00B5D6B7 /* UIImpactFeedbackGeneratorFeedbackStyleExtension.swift in Sources */,
 				8DACAEC4276613BC00B8918D /* DialogInteractionModeExtension.swift in Sources */,
 				D9D7405D26A60AAF004B8A3C /* StringExtension.swift in Sources */,
-				D983CB5926A6ED9600A4D8B0 /* ToasterItemSamples.swift in Sources */,
-				D983CB5726A6E85A00A4D8B0 /* ToasterBoolSamples.swift in Sources */,
+				D983CB5926A6ED9600A4D8B0 /* ToastItemSamples.swift in Sources */,
+				D983CB5726A6E85A00A4D8B0 /* ToastBoolSamples.swift in Sources */,
 				D9D7405426A60A3F004B8A3C /* InteractiveSheetSample.swift in Sources */,
 				8DBFF892275BB6E700B5D6B7 /* UINotificationFeedbackGeneratorFeedbackTypeExtension.swift in Sources */,
 				D9D7405226A60A2B004B8A3C /* HalfSheetSample.swift in Sources */,

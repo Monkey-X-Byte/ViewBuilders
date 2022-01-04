@@ -5,15 +5,15 @@
 import SwiftUI
 import ViewBuilders
 
-struct ToasterBoolViewBuilderSample: View {
+struct ToastBoolViewBuilderSample: View {
 
-  @State private var showToaster = false
+  @State private var showToast = false
   @State private var edge: VerticalEdge = .top
 
   var body: some View {
     VStack(spacing: 15) {
-      Button("Show Toaster") {
-        showToaster.toggle()
+      Button("Show Toast") {
+        showToast.toggle()
       }
       .padding()
       .background(.secondary, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
@@ -30,23 +30,23 @@ struct ToasterBoolViewBuilderSample: View {
       }
       .padding(.horizontal)
     }
-    .toaster(isPresented: $showToaster, background: .red, edge: edge) {
+    .toast(isPresented: $showToast, background: .red, edge: edge) {
       Label("Hello World!", systemImage: "airpods")
     }
-    .navigationTitle("Toaster Binding<Bool> with one @ViewBuilder Sample")
+    .navigationTitle("Toast Binding<Bool> with one @ViewBuilder Sample")
     .navigationBarTitleDisplayMode(.inline)
   }
 }
 
-struct ToasterBoolViewBuildersSample: View {
+struct ToastBoolViewBuildersSample: View {
 
-  @State private var showToaster = false
+  @State private var showToast = false
   @State private var edge: VerticalEdge = .top
 
   var body: some View {
     VStack(spacing: 15) {
-      Button("Show Toaster") {
-        showToaster.toggle()
+      Button("Show Toast") {
+        showToast.toggle()
       }
       .padding()
       .background(.secondary, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
@@ -63,12 +63,12 @@ struct ToasterBoolViewBuildersSample: View {
       }
       .padding(.horizontal)
     }
-    .toaster(isPresented: $showToaster, background: .red, edge: edge) {
+    .toast(isPresented: $showToast, background: .red, edge: edge) {
       Text("Hello World!")
     } icon: {
       Image(systemName: "airpods")
     }
-    .navigationTitle("Toaster Binding<Bool> with two @ViewBuilder Sample")
+    .navigationTitle("Toast Binding<Bool> with two @ViewBuilder Sample")
     .navigationBarTitleDisplayMode(.inline)
   }
 }

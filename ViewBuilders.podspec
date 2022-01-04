@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.version          = '0.0.9'
   s.summary          = 'A short description of ViewBuilders.'
   s.description      = <<-DESC
-  ViewBuilders is a powerful library for SwiftUI. It allows you to use View Modifiers to display components such as toaster, HUD, custom dialog and more.
+  ViewBuilders is a powerful library for SwiftUI. It allows you to use View Modifiers to display components such as toast, HUD, custom dialog and more.
 
   Behind the scenes, a modifier can be done in two different ways: all in SwiftUI or a UIKit-SwiftUI bridge.
 

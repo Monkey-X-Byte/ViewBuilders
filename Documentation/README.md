@@ -1,7 +1,11 @@
 # Documentation
 This is documentation for ViewBuilders 1.0.0 and below.
 
-ViewBuilders is a powerful library for the essential things that are missing in SwiftUI. This can range from the display of a toaster to components present in UIKit but not in this lovely framework.
+ViewBuilders is a powerful library for SwiftUI. It allows you to use *View Modifiers* to display components such as *toast*, *HUD*, *custom dialog* and more.
+
+Behind the scenes, a modifier can be done in two different ways: all in SwiftUI or a UIKit-SwiftUI bridge.
+
+In addition to these *View Modifiers*, ViewBuilders provides custom *EnvironmentValues* and modifiers to take full advantage of the preview in Xcode.
 
 ## Table of Contents
 
@@ -14,7 +18,7 @@ ViewBuilders is a powerful library for the essential things that are missing in 
 - [InteractiveSheet](./ViewModifiers/InteractiveSheet.md)
 - [HalfSheet](./ViewModifiers/HalfSheet.md)
 - [HUD](./ViewModifiers/HUD/README.md)
-- [Toaster](./ViewModifiers/Toaster/README.md)
+- [Toast](./ViewModifiers/Toast/README.md)
 - [NavigationAppearance](./ViewModifiers/NavigationAppearance.md)
 - [Dialog](./ViewModifiers/Dialog/README.md)
 

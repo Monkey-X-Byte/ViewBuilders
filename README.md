@@ -7,7 +7,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/ViewBuilders.svg?style=flat)](https://cocoapods.org/pods/ViewBuilders)
 
 ## Overview
-ViewBuilders is a powerful library for SwiftUI. It allows you to use *View Modifiers* to display components such as *toaster*, *HUD*, *custom dialog* and more.
+ViewBuilders is a powerful library for SwiftUI. It allows you to use *View Modifiers* to display components such as *toast*, *HUD*, *custom dialog* and more.
 
 Behind the scenes, a modifier can be done in two different ways: all in SwiftUI or a UIKit-SwiftUI bridge.
 
@@ -24,7 +24,7 @@ You can explore all the posibilities by running the [Example app](#Example).
   - [x] [InteractiveSheet](Documentation/ViewModifiers/InteractiveSheet.md)
   - [x] [HalfSheet](Documentation/ViewModifiers/HalfSheet.md)
   - [x] [HUD](Documentation/ViewModifiers/HUD/README.md)
-  - [x] [Toaster](Documentation/ViewModifiers/Toaster/README.md)
+  - [x] [Toast](Documentation/ViewModifiers/Toast/README.md)
   - [x] [NavigationAppearance](Documentation/ViewModifiers/NavigationAppearance.md)
   - [x] [Dialog](Documentation/ViewModifiers/Dialog/README.md)
 ### Preview
@@ -39,8 +39,8 @@ You can explore all the posibilities by running the [Example app](#Example).
   <a href="https://github.com/LucasAbijmil/ViewBuilders/blob/develop/Documentation/ViewModifiers/HalfSheet.md"><img src="/Documentation/Assets/HalfSheet.gif" width="200"></a>
   <a href="https://github.com/LucasAbijmil/ViewBuilders/blob/develop/Documentation/ViewModifiers/HUD/README.md"><img src="/Documentation/Assets/HUDBottom.gif" width="200"></a>
   <a href="https://github.com/LucasAbijmil/ViewBuilders/blob/develop/Documentation/ViewModifiers/HUD/README.md"><img src="/Documentation/Assets/HUDTop.gif" width="200"></a>
-  <a href="https://github.com/LucasAbijmil/ViewBuilders/blob/develop/Documentation/ViewModifiers/Toaster/README.md"><img src="/Documentation/Assets/ToasterBottom.gif" width="200"></a>
-  <a href="https://github.com/LucasAbijmil/ViewBuilders/blob/develop/Documentation/ViewModifiers/Toaster/README.md"><img src="/Documentation/Assets/ToasterTop.gif" width="200"></a>
+  <a href="https://github.com/LucasAbijmil/ViewBuilders/blob/develop/Documentation/ViewModifiers/Toast/README.md"><img src="/Documentation/Assets/ToastBottom.gif" width="200"></a>
+  <a href="https://github.com/LucasAbijmil/ViewBuilders/blob/develop/Documentation/ViewModifiers/Toast/README.md"><img src="/Documentation/Assets/ToastTop.gif" width="200"></a>
   <a href="https://github.com/LucasAbijmil/ViewBuilders/blob/develop/Documentation/ViewModifiers/NavigationAppearance.md"><img src="/Documentation/Assets/NavigationAppearanceLarge.png" width="200"></a>
   <a href="https://github.com/LucasAbijmil/ViewBuilders/blob/develop/Documentation/ViewModifiers/NavigationAppearance.md"><img src="/Documentation/Assets/NavigationAppearanceInline.png" width="200"></a>
   <a href="https://github.com/LucasAbijmil/ViewBuilders/blob/develop/Documentation/EnvironmentValues/NavigationAction.md"><img src="/Documentation/Assets/NavigationAction.gif" width="200"></a>

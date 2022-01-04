@@ -5,13 +5,13 @@
 import SwiftUI
 import ViewBuilders
 
-struct ToasterItemViewBuilderSample: View {
+struct ToastItemViewBuilderSample: View {
 
-  @StateObject private var viewModel = ToasterItemViewModel()
+  @StateObject private var viewModel = ToastItemViewModel()
 
   var body: some View {
     VStack(spacing: 15) {
-      Button("Show Toaster") {
+      Button("Show Toast") {
         viewModel.item = .sample(text: "Hello World!", symbol: "airpods")
       }
       .padding()
@@ -29,25 +29,25 @@ struct ToasterItemViewBuilderSample: View {
       }
       .padding(.horizontal)
     }
-    .toaster(item: $viewModel.item, background: .orange, edge: viewModel.edge) { item in
+    .toast(item: $viewModel.item, background: .orange, edge: viewModel.edge) { item in
       if case let .sample(text, symbol) = item {
         Label(text, systemImage: symbol)
       } else {
         Label("Item uknowned", systemImage: "xmark")
       }
     }
-    .navigationTitle("Toaster Binding<Item?> with one @ViewBuilder Sample")
+    .navigationTitle("Toast Binding<Item?> with one @ViewBuilder Sample")
     .navigationBarTitleDisplayMode(.inline)
   }
 }
 
-struct ToasterItemViewBuildersSample: View {
+struct ToastItemViewBuildersSample: View {
 
-  @StateObject private var viewModel = ToasterItemViewModel()
+  @StateObject private var viewModel = ToastItemViewModel()
 
   var body: some View {
     VStack(spacing: 15) {
-      Button("Show Toaster") {
+      Button("Show Toast") {
         viewModel.item = .sample(text: "Hello World!", symbol: "airpods")
       }
       .padding()
@@ -65,7 +65,7 @@ struct ToasterItemViewBuildersSample: View {
       }
       .padding(.horizontal)
     }
-    .toaster(item: $viewModel.item, background: .orange, edge: viewModel.edge) { item in
+    .toast(item: $viewModel.item, background: .orange, edge: viewModel.edge) { item in
       if case .sample(let text, _) = item {
         Text(text)
       } else {
@@ -78,17 +78,17 @@ struct ToasterItemViewBuildersSample: View {
         Image(systemName: "xmark")
       }
     }
-    .navigationTitle("Toaster Binding<Item?> with two @ViewBuilder Sample")
+    .navigationTitle("Toast Binding<Item?> with two @ViewBuilder Sample")
     .navigationBarTitleDisplayMode(.inline)
   }
 }
 
-fileprivate final class ToasterItemViewModel: ObservableObject {
+fileprivate final class ToastItemViewModel: ObservableObject {
 
-  @Published var item: ToasterSampleCase?
+  @Published var item: ToastSampleCase?
   @Published var edge: VerticalEdge = .top
 
-  enum ToasterSampleCase: Identifiable {
+  enum ToastSampleCase: Identifiable {
     case sample(text: String, symbol: String)
 
     var id: String {

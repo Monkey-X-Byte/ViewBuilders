@@ -56,10 +56,10 @@ enum Sample {
     case halfSheet = "half sheet"
     case hudBool = "HUD Binding<Bool>"
     case hudItem = "HUD Binding<Item?>"
-    case toasterBoolViewBuilder = "toaster Binding<Bool> with one @ViewBuilder"
-    case toasterBoolViewBuilders = "toaster Binding<Bool> with two @ViewBuilder"
-    case toasterItemViewBuilder = "toaster Binding<Item?> with one @ViewBuilder"
-    case toasterItemViewBuilders = "toaster Binding<Item?> with two @ViewBuilder"
+    case toastBoolViewBuilder = "toast Binding<Bool> with one @ViewBuilder"
+    case toastBoolViewBuilders = "toast Binding<Bool> with two @ViewBuilder"
+    case toastItemViewBuilder = "toast Binding<Item?> with one @ViewBuilder"
+    case toastItemViewBuilders = "toast Binding<Item?> with two @ViewBuilder"
     case navigationAppearance = "navigation bar appearance"
     case dialogBool = "dialog Binding<Bool>"
     case dialogItem = "dialog Binding<Item?>"
@@ -77,14 +77,14 @@ enum Sample {
           HUDBoolSample()
         case .hudItem:
           HUDItemSample()
-        case .toasterBoolViewBuilder:
-          ToasterBoolViewBuilderSample()
-        case .toasterBoolViewBuilders:
-          ToasterBoolViewBuildersSample()
-        case .toasterItemViewBuilder:
-          ToasterItemViewBuilderSample()
-        case .toasterItemViewBuilders:
-          ToasterItemViewBuildersSample()
+        case .toastBoolViewBuilder:
+          ToastBoolViewBuilderSample()
+        case .toastBoolViewBuilders:
+          ToastBoolViewBuildersSample()
+        case .toastItemViewBuilder:
+          ToastItemViewBuilderSample()
+        case .toastItemViewBuilders:
+          ToastItemViewBuildersSample()
         case .navigationAppearance:
           NavigationAppearanceSample()
         case .dialogBool:
