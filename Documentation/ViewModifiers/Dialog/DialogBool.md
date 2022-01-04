@@ -3,10 +3,6 @@
 ## Description
 Presents a custom dialog when a binding to a Boolean value that you provide is true.
 
-## Discussion
-If you want to add a button that dismisses the dialog, please add `withAnimation` to make sure that the animation is played.
-When adding such a button, you may want to set `interactionMode` to `none`.
-
 ## Signature of the function
 ```swift
 func dialog<Content: View, Background: ShapeStyle>(isPresented: Binding<Bool>, background: Background, edge: VerticalEdge = .bottom, interactionMode: DialogInteractionMode = .all, onDismiss: (() -> Void)? = nil, @ViewBuilder content: @escaping () -> Content) -> some View

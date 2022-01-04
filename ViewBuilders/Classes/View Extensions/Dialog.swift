@@ -8,9 +8,6 @@ public extension View {
 
   /// Presents a custom dialog when a binding to a Boolean value that you provide is true.
   ///
-  /// If you want to add a button that dismisses the dialog, please add `withAnimation` to make sure that the animation is played.
-  /// When adding such a button, you may want to set `interactionMode` to `none`.
-  ///
   /// - Parameters:
   ///   - isPresented: A binding to a Boolean value that determines whether to present the dialog that you create in the modifier's `content` closure.
   ///   - background: A ShapeStyle that will fill the background of the dialog.
@@ -32,9 +29,6 @@ public extension View {
   }
 
   /// Presents a custom dialog using the given item as a data source for the dialog's content.
-  ///
-  /// If you want to add a button that dismisses the dialog, please add `withAnimation` to make sure that the animation is played.
-  /// When adding such a button, you may want to set `interactionMode` to `none`.
   ///
   /// - Parameters:
   ///   - item: A binding to an optional source of truth for the dialog. When `item` is non-`nil`, the system passes the item's content to the modifier's closure.

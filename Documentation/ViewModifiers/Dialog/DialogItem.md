@@ -3,10 +3,6 @@
 ## Description
 Presents a custom dialog using the given item as a data source for the dialog's content.
 
-## Discussion
-If you want to add a button that dismisses the dialog, please add `withAnimation` to make sure that the animation is played.
-When adding such a button, you may want to set `interactionMode` to `none`.
-
 ## Signature of the function
 ```swift
 func dialog<Item: Identifiable, Content: View, Background: ShapeStyle>(item: Binding<Item?>, background: Background, edge: VerticalEdge = .bottom, interactionMode: DialogInteractionMode = .all, onDismiss: (() -> Void)? = nil, @ViewBuilder content: @escaping (Item) -> Content) -> some View
