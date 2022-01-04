@@ -24,11 +24,12 @@ public extension View {
           .zIndex(999)
           .onAppear {
             DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-              withAnimation { isPresented.wrappedValue = false }
+              isPresented.wrappedValue = false
             }
           }
       }
     }
+    .animation(.default.speed(0.5), value: isPresented.wrappedValue)
   }
 
   /// Presents a toast when a binding to a Boolean value that you provide is true.
@@ -50,11 +51,12 @@ public extension View {
           .zIndex(999)
           .onAppear {
             DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-              withAnimation { isPresented.wrappedValue = false }
+              isPresented.wrappedValue = false
             }
           }
       }
     }
+    .animation(.default.speed(0.5), value: isPresented.wrappedValue)
   }
 
   /// Presents a toast using the given item as a data source for the toast's content.
@@ -77,11 +79,12 @@ public extension View {
           .zIndex(999)
           .onAppear {
             DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-              withAnimation { item.wrappedValue = nil }
+              item.wrappedValue = nil
             }
           }
       }
     }
+    .animation(.default.speed(0.5), value: item.wrappedValue != nil)
   }
 
   /// Presents a toast using the given item as a data source for the toast's content.
@@ -105,10 +108,11 @@ public extension View {
           .zIndex(999)
           .onAppear {
             DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-              withAnimation { item.wrappedValue = nil }
+              item.wrappedValue = nil
             }
           }
       }
     }
+    .animation(.default.speed(0.5), value: item.wrappedValue != nil)
   }
 }

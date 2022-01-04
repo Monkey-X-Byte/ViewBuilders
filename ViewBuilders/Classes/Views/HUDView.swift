@@ -20,7 +20,6 @@ struct HUD<Content: View, Background: ShapeStyle>: View {
         .background(background)
         .clipShape(Capsule())
         .shadow(color: .black.opacity(0.20), radius: 20, x: 0, y: 5)
-        .animation(.default.speed(0.5))
         .onDisappear(perform: onDismiss)
       if edge == .top { Spacer() }
     }
@@ -50,7 +49,6 @@ struct HUDItem<Item: Identifiable, Content: View, Background: ShapeStyle>: View 
         .background(background)
         .clipShape(Capsule())
         .shadow(color: .black.opacity(0.20), radius: 20, x: 0, y: 5)
-        .animation(.default.speed(0.5))
         .onDisappear(perform: onDismiss)
       if edge == .top { Spacer() }
     }

@@ -22,7 +22,6 @@ struct Toast<Content: View, Background: ShapeStyle>: View {
         .background(background)
         .cornerRadius(currentDevice.isPad ? 16 : 8)
         .padding(.horizontal)
-        .animation(.default.speed(0.5))
         .onDisappear(perform: onDismiss)
       if edge == .top { Spacer() }
     }
@@ -48,7 +47,6 @@ struct ToastLabel<Title: View, Icon: View, Background: ShapeStyle>: View {
       .background(background)
       .cornerRadius(currentDevice.isPad ? 16 : 8)
       .padding(.horizontal)
-      .animation(.default.speed(0.5))
       .onDisappear(perform: onDismiss)
       if edge == .top { Spacer() }
     }
@@ -80,7 +78,6 @@ struct ToastItem<Item: Identifiable, Content: View, Background: ShapeStyle>: Vie
         .background(background)
         .cornerRadius(currentDevice.isPad ? 16 : 8)
         .padding(.horizontal)
-        .animation(.default.speed(0.5))
         .onDisappear(perform: onDismiss)
       if edge == .top { Spacer() }
     }
@@ -114,7 +111,6 @@ struct ToastLabelItem<Item: Identifiable, Title: View, Icon: View, Background: S
       .background(background)
       .cornerRadius(currentDevice.isPad ? 16 : 8)
       .padding(.horizontal)
-      .animation(.default.speed(0.5))
       .onDisappear(perform: onDismiss)
       if edge == .top { Spacer() }
     }

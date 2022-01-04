@@ -24,11 +24,12 @@ public extension View {
           .zIndex(999)
           .onAppear {
             DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-              withAnimation { isPresented.wrappedValue = false }
+              isPresented.wrappedValue = false
             }
           }
       }
     }
+    .animation(.default.speed(0.5), value: isPresented.wrappedValue)
   }
 
   /// Presents a HUD (heads-up display) using the given item as a data source for the HUD's content.
@@ -51,10 +52,11 @@ public extension View {
           .zIndex(999)
           .onAppear {
             DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-              withAnimation { item.wrappedValue = nil }
+              item.wrappedValue = nil
             }
           }
       }
     }
+    .animation(.default.speed(0.5), value: item.wrappedValue != nil)
   }
 }
