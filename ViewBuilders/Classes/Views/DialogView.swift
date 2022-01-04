@@ -57,7 +57,6 @@ struct Dialog<Content: View, Background: ShapeStyle>: View {
                 closeAction()
               }
           )
-          .animation(.default)
           .onDisappear(perform: onDismiss)
       }
     }
@@ -118,7 +117,6 @@ struct DialogItem<Item: Identifiable, Content: View, Background: ShapeStyle>: Vi
                 closeAction()
               }
           )
-          .animation(.default)
           .onDisappear(perform: onDismiss)
       }
     }

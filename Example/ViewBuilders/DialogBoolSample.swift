@@ -50,7 +50,7 @@ struct DialogBoolSample: View {
           .foregroundColor(.mint.opacity(0.5))
         Spacer()
         Button("Dismiss Dialog") {
-          withAnimation { showDialog.toggle() }
+          showDialog.toggle()
         }
       }
     }

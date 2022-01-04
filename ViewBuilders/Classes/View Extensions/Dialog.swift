@@ -23,11 +23,12 @@ public extension View {
       self
 
       if isPresented.wrappedValue {
-        Dialog(content: content, background: background, edge: edge, interactionMode: interactionMode, onDismiss: onDismiss) { withAnimation { isPresented.wrappedValue = false } }
+        Dialog(content: content, background: background, edge: edge, interactionMode: interactionMode, onDismiss: onDismiss) { isPresented.wrappedValue = false }
         .transition(.move(edge: edge.convertedToEdge).combined(with: .opacity))
         .zIndex(999)
       }
     }
+    .animation(.default, value: isPresented.wrappedValue)
   }
 
   /// Presents a custom dialog using the given item as a data source for the dialog's content.
@@ -49,10 +50,11 @@ public extension View {
       self
 
       if let wrappedValue = item.wrappedValue {
-        DialogItem(content: content, item: wrappedValue, background: background, edge: edge, interactionMode: interactionMode, onDismiss: onDismiss) { withAnimation { item.wrappedValue = nil } }
+        DialogItem(content: content, item: wrappedValue, background: background, edge: edge, interactionMode: interactionMode, onDismiss: onDismiss) { item.wrappedValue = nil }
         .transition(.move(edge: edge.convertedToEdge).combined(with: .opacity))
         .zIndex(999)
       }
     }
+    .animation(.default, value: item.wrappedValue != nil)
   }
 }
