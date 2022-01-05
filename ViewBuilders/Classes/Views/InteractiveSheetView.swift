@@ -5,7 +5,7 @@
 import SwiftUI
 
 /// A `UIViewControllerRepresentable` that's display a `UIViewController` bridged.
-struct InteractiveSheetView<Content: View>: UIViewControllerRepresentable {
+struct InteractiveSheet<Content: View>: UIViewControllerRepresentable {
 
   @Binding var isPresented: Bool
   @ViewBuilder let content: Content
@@ -43,9 +43,9 @@ struct InteractiveSheetView<Content: View>: UIViewControllerRepresentable {
 
   final class Coordinator: NSObject, UISheetPresentationControllerDelegate {
 
-    private let parent: InteractiveSheetView
+    private let parent: InteractiveSheet
 
-    init(parent: InteractiveSheetView) {
+    init(parent: InteractiveSheet) {
       self.parent = parent
     }
 
@@ -60,9 +60,9 @@ final class InteractiveSheetViewController<Content: View>: UIHostingController<C
 
   private let showsIndicator: Bool
   private let background: Color
-  private let mode: InteractiveSheetView<Content>.Mode
+  private let mode: InteractiveSheet<Content>.Mode
 
-  init(rootView: Content, showIndicator: Bool, background: Color, mode: InteractiveSheetView<Content>.Mode) {
+  init(rootView: Content, showIndicator: Bool, background: Color, mode: InteractiveSheet<Content>.Mode) {
     self.showsIndicator = showIndicator
     self.background = background
     self.mode = mode

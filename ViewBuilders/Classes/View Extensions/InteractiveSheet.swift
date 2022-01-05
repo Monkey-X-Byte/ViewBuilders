@@ -16,6 +16,6 @@ public extension View {
   ///   - content: A closure returning the content of the interactive sheet.
   func interactiveSheet<Content: View>(isPresented: Binding<Bool>, showsIndicator: Bool = true, background: Color, onDismiss: (() -> Void)? = nil, @ViewBuilder content: @escaping () -> Content) -> some View {
     self
-      .background(InteractiveSheetView(isPresented: isPresented, content: content, showsIndicator: showsIndicator, background: background, onDismiss: onDismiss, mode: .interactive))
+      .background(InteractiveSheet(isPresented: isPresented, content: content, showsIndicator: showsIndicator, background: background, onDismiss: onDismiss, mode: .interactive))
   }
 }
