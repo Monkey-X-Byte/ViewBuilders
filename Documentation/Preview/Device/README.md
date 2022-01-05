@@ -48,7 +48,7 @@ struct SwiftUIView_Previews: PreviewProvider {
   static var previews: some View {
     SwiftUIView()
       .previewDevices([.iPhone13ProMax, .iPadAir])
-      .previewWithColorSchemes(orientation: .landscapeLeft) // // ❌ This override must be in the first modifier
+      .previewWithColorSchemes(orientation: .landscapeLeft) // ❌ This override must be in the first modifier
   }
 }
 ```

@@ -19,7 +19,6 @@ In addition to these *View Modifiers*, ViewBuilders provides custom *Environment
 - [HalfSheet](./ViewModifiers/HalfSheet.md)
 - [HUD](./ViewModifiers/HUD/README.md)
 - [Toast](./ViewModifiers/Toast/README.md)
-- [NavigationAppearance](./ViewModifiers/NavigationAppearance.md)
 - [Dialog](./ViewModifiers/Dialog/README.md)
 
 ### Preview

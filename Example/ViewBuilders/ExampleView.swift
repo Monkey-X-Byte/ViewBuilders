@@ -60,7 +60,6 @@ enum Sample {
     case toastBoolViewBuilders = "toast Binding<Bool> with two @ViewBuilder"
     case toastItemViewBuilder = "toast Binding<Item?> with one @ViewBuilder"
     case toastItemViewBuilders = "toast Binding<Item?> with two @ViewBuilder"
-    case navigationAppearance = "navigation bar appearance"
     case dialogBool = "dialog Binding<Bool>"
     case dialogItem = "dialog Binding<Item?>"
 
@@ -85,8 +84,6 @@ enum Sample {
           ToastItemViewBuilderSample()
         case .toastItemViewBuilders:
           ToastItemViewBuildersSample()
-        case .navigationAppearance:
-          NavigationAppearanceSample()
         case .dialogBool:
           DialogBoolSample()
         case .dialogItem:
